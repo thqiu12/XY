@@ -213,11 +213,12 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
   padding: 34px; box-shadow: var(--shadow); text-align: center; position: sticky; top: 96px;
 }
 .rep__avatar {
-  width: 132px; height: 132px; margin: 0 auto 22px; border-radius: 50%;
+  width: 100%; max-width: 280px; aspect-ratio: 4 / 5; margin: 0 auto 22px; border-radius: var(--radius);
   background: linear-gradient(150deg, #0f2747, #1f4a86); color: #fff;
-  display: grid; place-items: center; font-size: 46px; font-weight: 900; letter-spacing: .02em;
-  box-shadow: 0 10px 30px rgba(15,39,71,.22);
+  display: grid; place-items: center; font-size: 68px; font-weight: 900; letter-spacing: .02em;
+  box-shadow: 0 12px 34px rgba(15,39,71,.20); overflow: hidden; position: relative;
 }
+.rep__avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 16%; }
 .rep__name { font-size: 22px; font-weight: 900; }
 .rep__name span { display: block; font-size: 13px; color: var(--muted); font-weight: 500; margin-top: 5px; letter-spacing: .08em; }
 .rep__role { margin-top: 14px; font-size: 14px; color: var(--accent-ink); font-weight: 700; }
@@ -289,6 +290,17 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .profile-table td b { color: var(--ink); font-weight: 700; }
 .profile-table ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
 .profile-table .small { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+/* ---------- history / 沿革 ---------- */
+.history { max-width: 860px; }
+.history__item { display: grid; grid-template-columns: 130px 1fr; gap: 28px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.history__item:last-child { border-bottom: 0; }
+.history__year { font-weight: 900; color: var(--accent-ink); font-size: 18px; letter-spacing: .01em; }
+.history__body b { display: block; color: var(--ink); font-weight: 700; font-size: 16.5px; margin-bottom: 5px; }
+.history__body span { color: var(--ink-2); font-size: 15px; line-height: 1.8; }
+@media (max-width: 560px) {
+  .history__item { grid-template-columns: 1fr; gap: 6px; }
+}
 
 /* ---------- contact ---------- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
