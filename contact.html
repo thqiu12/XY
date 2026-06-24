@@ -98,7 +98,7 @@
           </div>
           <div class="field">
             <label for="org">学校・法人名</label>
-            <input type="text" id="org" name="学校・法人名" autocomplete="organization" placeholder="例：〇〇日本語学校">
+            <input type="text" id="org" name="organization" autocomplete="organization" placeholder="例：〇〇日本語学校">
           </div>
           <div class="field">
             <label for="email">メールアドレス<span class="req">必須</span></label>
@@ -106,11 +106,11 @@
           </div>
           <div class="field">
             <label for="tel">電話番号</label>
-            <input type="tel" id="tel" name="電話番号" autocomplete="tel" placeholder="例：03-1234-5678">
+            <input type="tel" id="tel" name="phone" autocomplete="tel" placeholder="例：03-1234-5678">
           </div>
           <div class="field">
             <label for="topic">ご相談内容</label>
-            <select id="topic" name="ご相談内容">
+            <select id="topic" name="topic">
               <option>学校向けCRM・学生管理について</option>
               <option>募集管理システムについて</option>
               <option>人事・労務管理について</option>
@@ -121,7 +121,7 @@
           </div>
           <div class="field">
             <label for="message">お問い合わせ内容<span class="req">必須</span></label>
-            <textarea id="message" name="お問い合わせ内容" placeholder="ご相談内容や現在の課題について、ご記入ください。" required></textarea>
+            <textarea id="message" name="message" placeholder="ご相談内容や現在の課題について、ご記入ください。" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary" id="submitBtn"><i class="ph ph-paper-plane-tilt"></i>この内容で送信する</button>
           <div id="formStatus" class="form__status" role="status" aria-live="polite"></div>
