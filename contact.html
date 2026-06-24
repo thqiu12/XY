@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0f2747">
+<meta property="og:image" content="https://xy-cloud.org/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <title>お問い合わせ｜株式会社XY</title>
 <meta name="description" content="株式会社XYへのお問い合わせ。教育機関向けのシステム導入・DX支援に関するご相談を承ります。電話 080-4876-7999／メール setsuiken@xy-cloud.org。">
 <link rel="canonical" href="https://xy-cloud.org/contact.html">
@@ -17,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
@@ -82,22 +87,26 @@
           </div>
         </div>
 
-        <form class="form" action="mailto:setsuiken@xy-cloud.org" method="post" enctype="text/plain">
+        <form class="form" id="contactForm">
+          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="【xy-cloud.org】お問い合わせ">
+          <input type="hidden" name="from_name" value="株式会社XY 公式サイト">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="field">
             <label for="name">お名前<span class="req">必須</span></label>
-            <input type="text" id="name" name="お名前" placeholder="例：山田 太郎" required>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="例：山田 太郎" required>
           </div>
           <div class="field">
             <label for="org">学校・法人名</label>
-            <input type="text" id="org" name="学校・法人名" placeholder="例：〇〇日本語学校">
+            <input type="text" id="org" name="学校・法人名" autocomplete="organization" placeholder="例：〇〇日本語学校">
           </div>
           <div class="field">
             <label for="email">メールアドレス<span class="req">必須</span></label>
-            <input type="email" id="email" name="メールアドレス" placeholder="例：info@example.jp" required>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="例：info@example.jp" required>
           </div>
           <div class="field">
             <label for="tel">電話番号</label>
-            <input type="tel" id="tel" name="電話番号" placeholder="例：03-1234-5678">
+            <input type="tel" id="tel" name="電話番号" autocomplete="tel" placeholder="例：03-1234-5678">
           </div>
           <div class="field">
             <label for="topic">ご相談内容</label>
@@ -114,8 +123,9 @@
             <label for="message">お問い合わせ内容<span class="req">必須</span></label>
             <textarea id="message" name="お問い合わせ内容" placeholder="ご相談内容や現在の課題について、ご記入ください。" required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary"><i class="ph ph-paper-plane-tilt"></i>この内容で送信する</button>
-          <p class="form__note">送信ボタンを押すと、ご利用のメールソフトが起動します。<br>うまく動作しない場合は、お手数ですが <a href="mailto:setsuiken@xy-cloud.org">setsuiken@xy-cloud.org</a> 宛に直接お送りください。</p>
+          <button type="submit" class="btn btn--primary" id="submitBtn"><i class="ph ph-paper-plane-tilt"></i>この内容で送信する</button>
+          <div id="formStatus" class="form__status" role="status" aria-live="polite"></div>
+          <p class="form__note">いただいた内容は <a href="mailto:setsuiken@xy-cloud.org">setsuiken@xy-cloud.org</a> 宛に送信されます。<a href="privacy.html">プライバシーポリシー</a>に同意のうえ送信してください。</p>
         </form>
       </div>
     </div>
@@ -169,6 +179,56 @@
         toggle.querySelector('i').className = open ? 'ph ph-x' : 'ph ph-list';
       });
     }
+  })();
+
+  // contact form: submit via Web3Forms (no backend), with loading/success/error states
+  (function () {
+    var form = document.getElementById('contactForm');
+    if (!form) return;
+    var btn = document.getElementById('submitBtn');
+    var statusEl = document.getElementById('formStatus');
+    var MAILTO = 'お手数ですが <a href="mailto:setsuiken@xy-cloud.org">setsuiken@xy-cloud.org</a> 宛に直接お送りください。';
+
+    function setStatus(kind, html) {
+      statusEl.className = 'form__status is-' + kind;
+      statusEl.innerHTML = html;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var key = form.access_key.value;
+      if (!key || key.indexOf('REPLACE_WITH_') === 0) {
+        setStatus('error', '現在フォームを準備中です。' + MAILTO);
+        return;
+      }
+      var original = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<i class="ph ph-circle-notch"></i>送信中…';
+      statusEl.className = 'form__status';
+      statusEl.innerHTML = '';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.success) {
+            form.reset();
+            setStatus('success', 'お問い合わせを送信しました。担当者より折り返しご連絡いたします。');
+          } else {
+            setStatus('error', '送信に失敗しました。' + MAILTO);
+          }
+        })
+        .catch(function () {
+          setStatus('error', '送信に失敗しました。' + MAILTO);
+        })
+        .then(function () {
+          btn.disabled = false;
+          btn.innerHTML = original;
+        });
+    });
   })();
 </script>
 </body>

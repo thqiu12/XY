@@ -522,3 +522,29 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
   .profile-table th { border-bottom: 0; padding-bottom: 4px; }
   .profile-table td { padding-top: 4px; }
 }
+
+/* ---------- contact form status ---------- */
+.form__status { margin-top: 14px; padding: 13px 16px; border-radius: var(--radius-sm); font-size: 14.5px; font-weight: 600; line-height: 1.6; display: none; }
+.form__status.is-success { display: block; background: #e7f6ec; color: #1a7a3e; border: 1px solid #b7e3c5; }
+.form__status.is-error { display: block; background: #fdeceb; color: #b3261e; border: 1px solid #f5c6c2; }
+.form__status.is-error a { color: #b3261e; text-decoration: underline; }
+.form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+/* ---------- print (clean document, esp. 会社概要) ---------- */
+@media print {
+  .site-header, .site-footer, .nav__toggle, .cta, .btn, .case__more,
+  .hero__actions, .cta__actions { display: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  * { box-shadow: none !important; text-shadow: none !important; }
+  html { scroll-padding-top: 0; }
+  body { color: #111; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page-hero { background: #fff !important; color: #111 !important; border-bottom: 2px solid #111; padding: 8px 0 16px; }
+  .page-hero h1 { color: #111 !important; }
+  .page-hero p, .page-hero .crumb, .page-hero .crumb a { color: #333 !important; }
+  .section, .section--tight, .soft, .band-dark { padding: 16px 0 !important; background: #fff !important; color: #111 !important; }
+  .profile-table { border-color: #999; }
+  .profile-table th { background: #f2f2f2 !important; color: #111 !important; }
+  .profile-table td, .profile-table td b { color: #111 !important; }
+  a { color: #111 !important; text-decoration: none; }
+  .wrap { max-width: 100%; padding: 0 12px; }
+}
