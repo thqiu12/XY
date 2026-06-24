@@ -291,6 +291,36 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .profile-table ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
 .profile-table .small { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
+/* ---------- FDE page ---------- */
+.lead-block { max-width: 840px; }
+.lead-block .big { font-size: clamp(20px, 2.6vw, 27px); font-weight: 700; line-height: 1.62; color: var(--ink); letter-spacing: .01em; }
+.lead-block .big .accent { color: var(--accent); }
+.lead-block p { margin-top: 20px; color: var(--ink-2); font-size: 16.5px; line-height: 1.9; }
+.lead-block .origin { margin-top: 24px; padding: 18px 22px; background: var(--bg-soft); border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; font-size: 15px; color: var(--ink-2); }
+.lead-block .origin b { color: var(--navy); }
+
+.principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.compare__col { border: 1px solid var(--line); border-radius: var(--radius); padding: 32px 30px; }
+.compare__col--trad { background: var(--bg-soft); }
+.compare__col--xy { background: #fff; border: 1.5px solid var(--accent); box-shadow: var(--shadow-lg); }
+.compare__label { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: .04em; padding: 6px 14px; border-radius: 999px; margin-bottom: 18px; }
+.compare__col--trad .compare__label { background: #e9edf2; color: var(--muted); }
+.compare__col--xy .compare__label { background: var(--accent-soft); color: var(--accent-ink); }
+.compare__col h3 { font-size: 20px; font-weight: 800; }
+.compare__col > p { margin-top: 9px; color: var(--ink-2); font-size: 14.5px; line-height: 1.7; }
+.compare__list { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 15px; }
+.compare__list li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; color: var(--ink-2); line-height: 1.72; }
+.compare__list li i { font-size: 21px; flex-shrink: 0; margin-top: 1px; }
+.compare__list li b { color: var(--ink); font-weight: 700; }
+.compare__col--trad .compare__list li i { color: #b4bdc8; }
+.compare__col--xy .compare__list li i { color: var(--accent); }
+
+@media (max-width: 880px) {
+  .principles, .compare { grid-template-columns: 1fr; }
+}
+
 /* ---------- history / 沿革 ---------- */
 .history { max-width: 860px; }
 .history__item { display: grid; grid-template-columns: 130px 1fr; gap: 28px; padding: 24px 0; border-bottom: 1px solid var(--line); }
