@@ -25,6 +25,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://xy-cloud.org/column-zokujinka.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://xy-cloud.org/chinichi.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
