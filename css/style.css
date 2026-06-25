@@ -530,6 +530,22 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .form__status.is-error a { color: #b3261e; text-decoration: underline; }
 .form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
+/* ---------- FAQ ---------- */
+.faq { max-width: 880px; display: grid; gap: 12px; }
+.faq__item { border: 1px solid var(--line); border-radius: var(--radius); background: #fff; overflow: hidden; }
+.faq__item summary { list-style: none; cursor: pointer; padding: 20px 24px; font-weight: 700; font-size: 16.5px; color: var(--navy); display: flex; align-items: center; gap: 14px; }
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary .q { width: 26px; height: 26px; flex-shrink: 0; border-radius: 7px; background: var(--accent-soft); color: var(--accent-ink); display: grid; place-items: center; font-weight: 900; font-size: 13px; }
+.faq__item summary .ico { margin-left: auto; color: var(--muted); transition: transform .2s var(--ease); font-size: 20px; flex-shrink: 0; }
+.faq__item[open] summary .ico { transform: rotate(180deg); }
+.faq__item summary:hover { background: var(--bg-soft); }
+.faq__item .a { padding: 2px 24px 22px 64px; color: var(--ink-2); font-size: 15px; line-height: 1.9; }
+.faq__item .a a { color: var(--accent-ink); }
+@media (max-width: 560px) {
+  .faq__item summary { padding: 16px 18px; font-size: 15.5px; }
+  .faq__item .a { padding-left: 18px; }
+}
+
 /* ---------- print (clean document, esp. 会社概要) ---------- */
 @media print {
   .site-header, .site-footer, .nav__toggle, .cta, .btn, .case__more,
