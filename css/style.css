@@ -533,6 +533,11 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .form__status.is-error a { color: #b3261e; text-decoration: underline; }
 .form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
+/* ---------- screenshot frame ---------- */
+.shot { margin: 28px 0 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); background: #fff; }
+.shot img { display: block; width: 100%; height: auto; }
+.shot figcaption { font-size: 13px; color: var(--muted); padding: 12px 18px; border-top: 1px solid var(--line); background: var(--bg-soft); }
+
 /* ---------- metrics (導入成果) ---------- */
 .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .metric { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 24px; text-align: center; }
