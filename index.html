@@ -22,6 +22,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
@@ -29,23 +30,48 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "株式会社XY",
-  "alternateName": "XY Inc.",
-  "url": "https://xy-cloud.org/",
-  "logo": "https://xy-cloud.org/assets/favicon.svg",
-  "email": "setsuiken@xy-cloud.org",
-  "telephone": "+81-80-4876-7999",
-  "foundingDate": "2024-02-07",
-  "founder": { "@type": "Person", "name": "薛 偉軒" },
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "JP",
-    "addressRegion": "東京都",
-    "addressLocality": "新宿区",
-    "streetAddress": "高田馬場一丁目28番10号 三慶ビル3階"
-  },
-  "description": "教育機関向けのCRM・学生管理・募集管理・人事管理システムおよびAIエージェントの開発・導入支援。教育業界のDXコンサルティング。"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://xy-cloud.org/#organization",
+      "name": "株式会社XY",
+      "alternateName": "XY Inc.",
+      "url": "https://xy-cloud.org/",
+      "logo": "https://xy-cloud.org/assets/apple-touch-icon.png",
+      "image": "https://xy-cloud.org/assets/og.png",
+      "email": "setsuiken@xy-cloud.org",
+      "telephone": "+81-80-4876-7999",
+      "foundingDate": "2024-02-07",
+      "founder": { "@type": "Person", "name": "薛 偉軒" },
+      "areaServed": "JP",
+      "knowsAbout": ["教育DX", "学校向けCRM", "学生出願管理システム", "募集管理", "AIエージェント", "RAG", "LLMチューニング", "ローカルAI"],
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "169-0075",
+        "addressCountry": "JP",
+        "addressRegion": "東京都",
+        "addressLocality": "新宿区",
+        "streetAddress": "高田馬場一丁目28番10号 三慶ビル3階"
+      },
+      "description": "教育機関向けのCRM・学生管理・募集管理・人事管理システムおよびAIエージェントの開発・導入支援。教育業界のDXコンサルティング。",
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "学校向けCRM", "serviceType": "教育機関向けCRM" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "学生管理システム" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "募集管理システム" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "人事・労務管理" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AIエージェント導入" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DXコンサルティング" } }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://xy-cloud.org/#website",
+      "url": "https://xy-cloud.org/",
+      "name": "株式会社XY",
+      "inLanguage": "ja",
+      "publisher": { "@id": "https://xy-cloud.org/#organization" }
+    }
+  ]
 }
 </script>
 </head>
