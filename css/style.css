@@ -400,6 +400,32 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
   .case-values { grid-template-columns: 1fr; }
 }
 
+/* ---------- product map (Compass 全体構想) ---------- */
+.pmap { margin-top: 30px; }
+.pmap__band { display: flex; flex-wrap: wrap; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.pmap__band--uniq { border: 1.5px solid var(--accent); }
+.pmap__side { flex: 0 0 220px; padding: 22px; color: #fff; display: flex; flex-direction: column; gap: 5px; justify-content: center; }
+.pmap__band--live .pmap__side { background: var(--navy); }
+.pmap__band--ext  .pmap__side { background: var(--accent-ink); }
+.pmap__band--uniq .pmap__side { background: var(--navy-2); }
+.pmap__top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 2px; }
+.pmap__edition { font-size: 11.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.72); }
+.pmap__side h3 { color: #fff; font-size: 19px; font-weight: 800; margin: 0; }
+.pmap__side p { color: rgba(255,255,255,.82); font-size: 12.5px; line-height: 1.6; margin: 0; }
+.pmap__badge { font-size: 10.5px; font-weight: 700; border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+.pmap__badge--live { background: #0fb6a8; color: #fff; }
+.pmap__badge--ext  { background: rgba(255,255,255,.2); color: #fff; }
+.pmap__badge--uniq { background: var(--accent); color: #fff; }
+.pmap__main { flex: 1 1 380px; padding: 22px 24px; background: #fff; display: flex; align-items: center; }
+.pmap__band--uniq .pmap__main { background: var(--accent-soft); }
+.pmap__chips { display: flex; flex-wrap: wrap; gap: 9px; }
+.pmap__chips span { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 9px; padding: 8px 13px; font-size: 13.5px; color: var(--navy); font-weight: 600; }
+.pmap__band--uniq .pmap__chips span { background: #fff; border-color: #d6e4fd; }
+.pmap__link { text-align: center; color: var(--line-2); font-size: 24px; line-height: 1; margin: 8px 0; }
+@media (max-width: 720px) {
+  .pmap__side, .pmap__main { flex-basis: 100%; }
+}
+
 /* ---------- FDE page ---------- */
 .lead-block { max-width: 840px; }
 .lead-block .big { font-size: clamp(20px, 2.6vw, 27px); font-weight: 700; line-height: 1.62; color: var(--ink); letter-spacing: .01em; }
