@@ -11,7 +11,7 @@ PAGES = [
     "index.html", "company.html", "compass.html", "chinichi.html", "cases.html",
     "fde.html", "faq.html", "contact.html", "privacy.html", "news.html",
     "recruit.html", "column.html", "column-education-dx.html", "column-zokujinka.html",
-    "investors.html", "partners.html", "story.html",
+    "investors.html", "partners.html", "story.html", "technology.html",
 ]
 # Japanese allowed on English pages (names that have no English form, official license numbers, and the link back to Japanese)
 JA_ALLOW = ["株式会社XY", "薛 偉軒", "日本語", "派13-318864", "13-ユ-320024", "薛"]
