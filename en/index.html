@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f2747">
+<meta property="og:image" content="https://xy-cloud.org/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>XY, K.K. | School operations software and AI, built by educators in Tokyo</title>
+<meta name="description" content="XY, K.K. builds and deploys operations software and AI agents for educational institutions. Our student application and management system, Compass, runs daily at schools in our education group in Japan.">
+<link rel="canonical" href="https://xy-cloud.org/en/">
+<link rel="alternate" hreflang="ja" href="https://xy-cloud.org/">
+<link rel="alternate" hreflang="en" href="https://xy-cloud.org/en/">
+<link rel="alternate" hreflang="x-default" href="https://xy-cloud.org/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="XY, K.K. | School operations software and AI, built by educators in Tokyo">
+<meta property="og:description" content="Operations software and AI agents for educational institutions, built by a team that runs schools.">
+<meta property="og:url" content="https://xy-cloud.org/en/">
+<meta property="og:site_name" content="XY, K.K.">
+<meta property="og:locale" content="en_US">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="../css/style.css?v=16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://xy-cloud.org/#organization",
+      "name": "XY, K.K.",
+      "alternateName": "株式会社XY",
+      "url": "https://xy-cloud.org/en/",
+      "logo": "https://xy-cloud.org/assets/apple-touch-icon.png",
+      "image": "https://xy-cloud.org/assets/og.png",
+      "email": "setsuiken@xy-cloud.org",
+      "telephone": "+81-80-4876-7999",
+      "foundingDate": "2024-02-07",
+      "founder": { "@type": "Person", "name": "Iken Setsu" },
+      "areaServed": "Worldwide",
+      "duns": "964338668",
+      "knowsAbout": ["Education technology", "School CRM", "Student application management", "Student recruitment", "AI agents", "RAG", "LLM tuning", "On-premise AI"],
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "169-0075",
+        "addressCountry": "JP",
+        "addressRegion": "Tokyo",
+        "addressLocality": "Shinjuku-ku",
+        "streetAddress": "3F Sankei Bldg., 1-28-10 Takadanobaba"
+      },
+      "description": "Development and deployment of CRM, student management, recruitment and HR systems and AI agents for educational institutions, plus operations consulting.",
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "School CRM" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Student management system" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recruitment and admissions system" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HR and staff management" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI agent deployment" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Operations consulting" } }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://xy-cloud.org/en/#website",
+      "url": "https://xy-cloud.org/en/",
+      "name": "XY, K.K.",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://xy-cloud.org/#organization" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" id="nav">
+      <a class="nav__brand" href="index.html" aria-label="XY, K.K. home">
+        <img class="logo" src="../assets/logo.svg" alt="" width="80" height="32">
+        <span class="brand-jp">XY, K.K.</span>
+      </a>
+      <div class="nav__links">
+        <a href="#services">Services</a>
+        <a href="fde.html">FDE</a>
+        <a href="cases.html">Case Studies</a>
+        <a href="column.html">Insights</a>
+        <a href="recruit.html">Careers</a>
+        <a href="company.html">Company</a>
+      </div>
+      <div class="nav__cta">
+        <div class="lang-switch" role="group" aria-label="Language"><a href="../" hreflang="ja" lang="ja">JA</a><span aria-current="true">EN</span></div>
+        <a class="nav__phone" href="tel:+818048767999"><i class="ph-fill ph-phone-call"></i>+81-80-4876-7999</a>
+        <a class="btn btn--primary" href="contact.html">Contact us</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><i class="ph ph-list"></i></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <span class="hero__eyebrow"><i class="ph-fill ph-graduation-cap"></i>Education × Technology</span>
+        <h1>AI-native school operations,<br><span class="accent">built by educators.</span></h1>
+        <p class="hero__lead">We build and deploy operations software and AI agents for language schools, vocational colleges and other educational institutions. We run schools ourselves, so we design for the way schools actually work — from student recruitment to daily administration.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="contact.html"><i class="ph ph-paper-plane-tilt"></i>Talk to us</a>
+          <a class="btn btn--ghost" href="#services">See our services</a>
+        </div>
+        <div class="hero__meta">
+          <div><b>Since 2024</b><span>Takadanobaba, Tokyo</span></div>
+          <div><b>From the field</b><span>Built by school operators</span></div>
+          <div><b>CRM / AI</b><span>Recruitment to HR</span></div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero-card">
+          <div class="hero-card__tag">EDUCATION DX PLATFORM</div>
+          <div class="hero-card__big">XY<small>Operations tools for schools</small></div>
+          <div class="hero-card__list">
+            <div><i class="ph-fill ph-check-circle"></i>School CRM and student management</div>
+            <div><i class="ph-fill ph-check-circle"></i>Streamlined recruitment and applications</div>
+            <div><i class="ph-fill ph-check-circle"></i>Workflow automation with AI agents</div>
+            <div><i class="ph-fill ph-check-circle"></i>Structured HR and staff administration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRACTION ===================== -->
+<section class="section--tight soft">
+  <div class="wrap">
+    <div class="metrics reveal">
+      <div class="metric"><b>2024</b><div class="lbl">Founded</div><div class="sub">An EdTech company born inside an education group</div></div>
+      <div class="metric"><b>~440</b><div class="lbl">Applicants managed in Compass</div><div class="sub">At one school in production</div></div>
+      <div class="metric"><b>1–2</b><div class="lbl">Staff handling applications</div><div class="sub">Down from 6–8</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="section band-dark">
+  <div class="wrap">
+    <div class="problem reveal">
+      <div class="problem__intro">
+        <span class="eyebrow">The problem</span>
+        <h2>Does your school run on<br>a few key people?</h2>
+        <p>At many educational institutions, recruitment, applications, student support and HR still run on paper, spreadsheets and the experience of individual staff. That work is hard to hand over, and it is where mistakes and overtime pile up.</p>
+      </div>
+      <div class="problem__list">
+        <div class="problem__item">
+          <i class="ph-fill ph-files"></i>
+          <div><b>Recruitment that depends on individuals</b><span>Information from first inquiry to enrollment is scattered, so follow-ups get missed or duplicated.</span></div>
+        </div>
+        <div class="problem__item">
+          <i class="ph-fill ph-clock-countdown"></i>
+          <div><b>Repetitive paperwork</b><span>Rosters, document checks and reminder emails take up time staff could spend with students.</span></div>
+        </div>
+        <div class="problem__item">
+          <i class="ph-fill ph-chart-line-down"></i>
+          <div><b>Data that never reaches management</b><span>Without a clear view of recruitment and student activity, decisions fall back on gut feeling.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>Six areas where we put<br>school operations on solid ground.</h2>
+      <p>Everything we build is meant to be used every day by school staff. We cover development and deployment, adoption, and the operational consulting around it.</p>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc">
+        <div class="svc__icon"><i class="ph ph-users-three"></i></div>
+        <h3>School CRM</h3>
+        <p>One record for every prospective student, current student and graduate, with inquiries and follow-ups visible to the whole team.</p>
+        <div class="svc__tags"><span>Contacts</span><span>Follow-up</span><span>Single source</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc__icon"><i class="ph ph-student"></i></div>
+        <h3>Student management</h3>
+        <p>Enrollment, grades, attendance and communication history in one place, so operations continue when staff change.</p>
+        <div class="svc__tags"><span>Enrollment</span><span>Attendance</span><span>Shared records</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc__icon"><i class="ph ph-megaphone-simple"></i></div>
+        <h3>Recruitment &amp; admissions</h3>
+        <p>A system for the full path from recruitment to application and enrollment, so nothing slips and more applicants convert.</p>
+        <div class="svc__tags"><span>Recruitment</span><span>Applications</span><span>Conversion</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc__icon"><i class="ph ph-identification-badge"></i></div>
+        <h3>HR &amp; staff administration</h3>
+        <p>Shifts, time records and contracts for teachers and staff, organized for the way schools employ people.</p>
+        <div class="svc__tags"><span>Time records</span><span>Shifts</span><span>Contracts</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc__icon"><i class="ph ph-robot"></i></div>
+        <h3>AI agents</h3>
+        <p>AI handles first-line inquiries, document checks and reminders, taking routine work off your staff.</p>
+        <div class="svc__tags"><span>Automation</span><span>First response</span><span>Efficiency</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc__icon"><i class="ph ph-strategy"></i></div>
+        <h3>Operations consulting</h3>
+        <p>We map your current workflows, decide what to systematize and what to keep, and stay with you through adoption and results.</p>
+        <div class="svc__tags"><span>Process design</span><span>Adoption</span><span>Management</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AI CAPABILITIES ===================== -->
+<section class="section soft" id="ai">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">AI Capability</span>
+      <h2>AI engineering that goes<br>beyond education.</h2>
+      <p>The engineering behind Compass also powers our AI work for other settings — from workflow automation to fully on-premise AI.</p>
+    </div>
+    <div class="cap-grid reveal">
+      <div class="cap">
+        <div class="cap__icon"><i class="ph ph-arrows-clockwise"></i></div>
+        <div>
+          <h3>Workflow automation</h3>
+          <p>We automate routine administration and workflows — inquiries, document processing, reminders — to cut manual work and errors.</p>
+          <div class="cap__tags"><span>Workflows</span><span>Routine tasks</span><span>Less manual work</span></div>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap__icon"><i class="ph ph-database"></i></div>
+        <div>
+          <h3>RAG (retrieval-augmented generation)</h3>
+          <p>AI answers from your manuals and past documents and shows its sources, so knowledge held by a few people becomes available to everyone.</p>
+          <div class="cap__tags"><span>Internal knowledge</span><span>Document search</span><span>Cited answers</span></div>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap__icon"><i class="ph ph-sliders-horizontal"></i></div>
+        <div>
+          <h3>LLM tuning</h3>
+          <p>We adapt language models to your use case and vocabulary, from prompt design to tuning, for accuracy and ease of use.</p>
+          <div class="cap__tags"><span>Prompt design</span><span>Optimization</span><span>Accuracy</span></div>
+        </div>
+      </div>
+      <div class="cap">
+        <div class="cap__icon"><i class="ph ph-hard-drives"></i></div>
+        <div>
+          <h3>On-premise AI</h3>
+          <p>AI built and run inside your own environment, so confidential data never leaves it. Designed for organizations that put security first.</p>
+          <div class="cap__tags"><span>On-premise</span><span>Data protection</span><span>Security</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="stack reveal">
+      <span class="lbl">Stack</span>
+      <span class="t">Next.js</span><span class="t">TypeScript</span><span class="t">Prisma</span><span class="t">PostgreSQL</span><span class="t">Tailwind CSS</span><span class="t">AI (Claude)</span><span class="t">In-house CI/CD</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STRENGTHS ===================== -->
+<section class="section" id="strengths">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why XY</span>
+      <h2>The people who build it<br>also run schools.</h2>
+      <p>XY grew out of running educational institutions. We don't sell IT from the outside — we build systems that hold up in daily school operations.</p>
+    </div>
+
+    <div class="strength reveal">
+      <div class="strength__media"><span class="num">01</span><i class="ph ph-chalkboard-teacher"></i></div>
+      <div class="strength__body">
+        <h3>Built by school operators, for daily use</h3>
+        <p>Our CEO has run Japanese language schools and vocational colleges. We know which steps really cause trouble for staff, and we design tools that get used rather than shelved.</p>
+        <ul>
+          <li><i class="ph-fill ph-check-circle"></i>Designed around real school workflows</li>
+          <li><i class="ph-fill ph-check-circle"></i>Support through adoption, not just delivery</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="strength reveal">
+      <div class="strength__media"><span class="num">02</span><i class="ph ph-puzzle-piece"></i></div>
+      <div class="strength__body">
+        <h3>One connected system, from recruitment to operations</h3>
+        <p>When recruitment, applications, student records and HR live in separate tools, information breaks apart. We connect them so the whole school runs as one flow.</p>
+        <ul>
+          <li><i class="ph-fill ph-check-circle"></i>Data shared across every area</li>
+          <li><i class="ph-fill ph-check-circle"></i>Phased rollout that fits your size and policies</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="strength reveal">
+      <div class="strength__media"><span class="num">03</span><i class="ph ph-cpu"></i></div>
+      <div class="strength__body">
+        <h3>AI applied to real work</h3>
+        <p>Adopting AI is not the goal. We focus on the tasks that actually weigh on schools, such as inquiries and document checks, and build AI in where it pays off.</p>
+        <ul>
+          <li><i class="ph-fill ph-check-circle"></i>AI designed around specific tasks</li>
+          <li><i class="ph-fill ph-check-circle"></i>Clear division of work between people and AI</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="strength reveal">
+      <div class="strength__media"><span class="num">04</span><i class="ph ph-handshake"></i></div>
+      <div class="strength__body">
+        <h3>Direct access to the people who decide and build</h3>
+        <p>You work directly with our CEO, who also leads product and engineering using an AI-assisted development process. There is no chain of account managers between your request and the people who act on it, so decisions are quick and changes ship fast.</p>
+        <ul>
+          <li><i class="ph-fill ph-check-circle"></i>Talk directly to the decision-maker</li>
+          <li><i class="ph-fill ph-check-circle"></i>No relay of messages — fast answers and fast delivery</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUCTS ===================== -->
+<section class="section soft" id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Products</span>
+      <h2>One platform for running<br>a school corporation.</h2>
+      <p>We build and operate our own products for educational institutions. Starting from admissions, we are connecting every part of school operations on a single platform.</p>
+    </div>
+    <div class="products reveal">
+      <div class="product-os">
+        <span class="ptag"><i class="ph-fill ph-stack"></i>Operating platform for school corporations</span>
+        <h3>chinichi-OS</h3>
+        <p>One platform for the whole school corporation. Starting from applications, it links student management, HR, enrollment and accounting into shared infrastructure where people and AI work together.</p>
+        <div class="modules">
+          <span class="live">Applications (Compass) live</span>
+          <span>Students</span>
+          <span>HR</span>
+          <span>Enrollment</span>
+          <span>Accounting</span>
+        </div>
+        <div class="product-status"><i class="ph-fill ph-rocket-launch"></i>In development, rolling out in phases</div>
+        <a href="chinichi.html" style="position:relative;z-index:1;margin-top:16px;display:inline-flex;align-items:center;gap:7px;color:#9fc0ff;font-weight:700;font-size:14px;text-decoration:none">More about chinichi-OS<i class="ph ph-arrow-right"></i></a>
+      </div>
+      <div class="product-app">
+        <span class="ptag"><i class="ph-fill ph-compass"></i>Student application &amp; management system</span>
+        <h3>Compass</h3>
+        <p>The admissions module of chinichi-OS. It manages applications from international and domestic students across multiple schools and programs in one system, with AI assisting on document checks and communication.</p>
+        <div class="schools">
+          <span>Hirai Gakuen</span>
+          <span>Haba Gakuen</span>
+          <span>SGG Gaigo Gakuin</span>
+        </div>
+        <a class="case__more" href="compass.html">See how Compass is used<i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY ===================== -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why</span>
+      <h2>Why technology, in education?</h2>
+    </div>
+    <div class="lead-block reveal">
+      <p class="big">Education is work done by people. That is exactly why we use technology — to give people room for <span class="accent">the work only people can do</span>.</p>
+      <p>Recruitment, applications, enrollment records: much of a school's time disappears into paper, spreadsheets and repetitive administration. Having run schools ourselves, we know how much that costs. So we don't stop at advice from the outside. We build the systems ourselves and stay until they work. Giving teachers and staff back the time to face their students — that is why we founded XY.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REPRESENTATIVE ===================== -->
+<section class="section soft" id="representative">
+  <div class="wrap">
+    <div class="rep reveal">
+      <div class="rep__card">
+        <div class="rep__avatar"><span aria-hidden="true">薛</span><img src="../assets/daihyou.jpg" alt="Iken Setsu, Representative Director &amp; CEO" onerror="this.remove()"></div>
+        <div class="rep__name">Iken Setsu<span>薛 偉軒</span></div>
+        <div class="rep__role">Representative Director &amp; CEO</div>
+        <div class="rep__tags">
+          <span>Keio University (B.A.)</span>
+          <span>The University of Tokyo (Master's)</span>
+          <span>Chair of an educational corporation</span>
+          <span>Leads AI &amp; product development</span>
+          <span>Former Recruit Co., Ltd.</span>
+        </div>
+      </div>
+      <div class="rep__body">
+        <span class="eyebrow">Message from the CEO</span>
+        <h2>Solving the problems I saw inside schools.</h2>
+        <p>I was born in China, graduated from Keio University and completed a master's program at the University of Tokyo. Since 2012 I have worked in study-in-Japan services, advising students on undergraduate and graduate admissions and launching and running Japanese-language education businesses.</p>
+        <p>At Recruit Co., Ltd. I worked in corporate sales and web marketing before moving into business planning and new business development. I then joined the management of educational institutions and have run several education businesses, including Japanese language schools and vocational colleges.</p>
+        <p>Today I help lead an education group that welcomes more than 4,000 international students a year, and I serve as chair of an educational corporation and as representative of several education-related companies. Years of this work showed me how much schools struggle with complex administration and with operations that depend on a few individuals. I founded XY to solve that.</p>
+        <p>I personally lead our product development, using AI and a modern technology stack. We build our systems in-house with a small team and AI-assisted development, starting with Compass, our student application and management system. Our work spans workflow automation, knowledge retrieval with RAG, LLM tuning and on-premise AI, putting AI agents to work in real operations. We bring education and technology together from both the management and the engineering side.</p>
+        <div class="rep__quote">Our mission is to raise the productivity of educational institutions and support their long-term growth through education and technology.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CASES ===================== -->
+<section class="section" id="cases">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">In production</span>
+      <h2>Compass is already<br>running schools.</h2>
+      <p>Compass runs in daily operations at schools operated within our education group — Haba Gakuen, Hirai Gakuen and SGG Gaigo Gakuin. At one of these schools, application processing for about 440 applicants is now handled by 1–2 staff members instead of 6–8.</p>
+    </div>
+    <figure class="shot reveal" style="margin:0 0 30px">
+      <a href="cases.html"><img src="../assets/compass-screen.jpg" alt="The Compass application portal" width="1920" height="1560" loading="lazy"></a>
+      <figcaption>The Compass application portal in production (school names hidden)</figcaption>
+    </figure>
+    <div class="reveal" style="text-align:center">
+      <a class="btn btn--primary" href="cases.html"><i class="ph ph-buildings"></i>See all case studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MISSION ===================== -->
+<section class="section mission">
+  <div class="wrap reveal">
+    <span class="eyebrow">Mission</span>
+    <h2>Building the infrastructure of<br><span class="ac">educational institutions.</span></h2>
+    <p>We are building an operating platform for school corporations that starts with admissions and connects student management, HR, enrollment and accounting. Shaped by feedback from the people who use it, it is infrastructure where people and AI work together — software that helps educational institutions become more productive and grow sustainably.</p>
+    <span class="tag">Human × AI × Global</span>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section--tight">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="cta__txt">
+        <h2>Not sure where to start?<br>Let's talk.</h2>
+        <p>We start by understanding how your institution works today, then propose a realistic plan. Whether you run a school or are exploring a partnership or investment, we'd like to hear from you.</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--onnavy" href="contact.html"><i class="ph ph-paper-plane-tilt"></i>Contact form</a>
+        <div class="cta__phone">Prefer to call?<b><a href="tel:+818048767999">+81-80-4876-7999</a></b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img class="logo" src="../assets/logo-white.svg" alt="XY, K.K." width="80" height="32">
+        <div class="brand-jp">XY, K.K.</div>
+        <p>Software and AI for educational institutions,<br>built by people who run schools.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="fde.html">FDE</a></li>
+          <li><a href="index.html#strengths">Why XY</a></li>
+          <li><a href="cases.html">Case Studies</a></li>
+          <li><a href="index.html#representative">Message from the CEO</a></li>
+          <li><a href="company.html">Corporate Profile</a></li>
+          <li><a href="column.html">Insights</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="recruit.html">Careers</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__contact">
+        <h4>Contact</h4>
+        <div><i class="ph-fill ph-map-pin"></i><span>3F Sankei Bldg., 1-28-10 Takadanobaba,<br>Shinjuku-ku, Tokyo 169-0075, Japan</span></div>
+        <div><i class="ph-fill ph-phone-call"></i><span><a href="tel:+818048767999" style="color:inherit">+81-80-4876-7999</a></span></div>
+        <div><i class="ph-fill ph-envelope-simple"></i><span><a href="mailto:setsuiken@xy-cloud.org" style="color:inherit">setsuiken@xy-cloud.org</a></span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 XY, K.K. (株式会社XY) All rights reserved.</p>
+      <div class="legal">
+        <a href="company.html">Corporate Profile</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="../" hreflang="ja" lang="ja">日本語</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="float-cta" href="contact.html" aria-label="Contact us"><i class="ph-fill ph-chat-circle-dots"></i>Contact us</a>
+
+<script>
+  // mobile nav toggle
+  (function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        toggle.querySelector('i').className = open ? 'ph ph-x' : 'ph ph-list';
+      });
+      nav.querySelectorAll('.nav__links a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'Open menu');
+          toggle.querySelector('i').className = 'ph ph-list';
+        });
+      });
+    }
+  })();
+
+  // scroll reveal (respects reduced motion)
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
