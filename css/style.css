@@ -694,3 +694,5 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .lang-switch a { color: var(--ink-2); }
 .lang-switch a:hover { color: var(--accent-ink); text-decoration: none; background: var(--accent-soft); }
 .lang-switch [aria-current] { background: var(--navy); color: #fff; }
+/* 言語切替を追加したぶん、狭めの PC 幅ではナビの電話番号を隠す（CTA・フッターに記載あり） */
+@media (max-width: 1320px) { .nav__phone { display: none; } }
