@@ -69,16 +69,16 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">At a glance</span>
         <h2>Where we stand today</h2>
       </div>
-      <div class="metrics">
+      <div class="metrics reveal">
       <div class="metric"><b>2024</b><div class="lbl">Founded</div><div class="sub">Takadanobaba, Tokyo</div></div>
       <div class="metric"><b>4,000+</b><div class="lbl">International students a year</div><div class="sub">Across XY Group</div></div>
       <div class="metric"><b>Live</b><div class="lbl">Compass in production</div><div class="sub">Since 2026, at group schools</div></div>
       </div>
-      <div class="metrics" style="margin-top:18px">
+      <div class="metrics reveal" style="margin-top:18px">
       <div class="metric"><b>~440</b><div class="lbl">Applicants managed in Compass</div><div class="sub">At one group school</div></div>
       <div class="metric"><b>1–2</b><div class="lbl">Staff handling applications</div><div class="sub">Down from 6–8</div></div>
       <div class="metric"><b>2</b><div class="lbl">Staffing licenses in the group</div><div class="sub">Worker dispatch and job placement (CCC)</div></div>
@@ -88,12 +88,12 @@
 
   <section class="section soft">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">How the group fits together</span>
         <h2>An education group<br>with its own technology.</h2>
         <p>XY Group runs schools and career support for international students in Japan. XY, K.K. sits at its core: it builds the technology every group business runs on, and brings what works there to schools beyond the group.</p>
       </div>
-    <div class="case-cards">
+    <div class="case-cards reveal">
       <div class="case-card tint">
         <span class="pill">Schools and careers</span>
         <h3>Schools and career support for international students</h3>
@@ -110,11 +110,11 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Business model</span>
         <h2>How XY creates value</h2>
       </div>
-    <div class="svc-grid">
+    <div class="svc-grid reveal">
       <div class="svc">
         <div class="svc__icon"><i class="ph ph-buildings"></i></div>
         <h3>Group systems</h3>
@@ -136,12 +136,12 @@
 
   <section class="section soft">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Roadmap</span>
         <h2>chinichi-OS, module by module</h2>
         <p>chinichi-OS connects every part of running a school corporation. Modules roll out in phases, starting with admissions.</p>
       </div>
-    <div class="case-flow">
+    <div class="case-flow reveal">
       <div class="step"><div class="n">LIVE</div><div class="t">Applications<br>(Compass)</div></div>
       <div class="step"><div class="n">PLANNED</div><div class="t">Student management</div></div>
       <div class="step"><div class="n">PLANNED</div><div class="t">HR</div></div>
@@ -153,13 +153,13 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Group structure</span>
         <h2>XY Group</h2>
         <p>XY Group consists of XY, K.K., SGG Gaigo Gakuin, Chinichi Co., Ltd. and CCC Co., Ltd., together with Haba Gakuen and Hirai Gakuen, educational corporations chaired by our CEO. From schools to careers, and the technology behind them, we work together as one group.</p>
       </div>
       <a class="case__more" href="company.html">See all group companies<i class="ph ph-arrow-right"></i></a>
-      <div class="section-head" style="margin-top:56px">
+      <div class="section-head reveal" style="margin-top:56px">
         <span class="eyebrow">Leadership</span>
         <h2>Iken Setsu, Representative Director &amp; CEO</h2>
         <p>A graduate of Keio University with a master's degree from the University of Tokyo, and formerly at Recruit Co., Ltd. He has worked in international education since 2012, chairs an educational corporation, and personally leads XY's AI and product development.</p>
@@ -170,7 +170,7 @@
 
   <section class="section--tight">
     <div class="wrap">
-      <div class="cta">
+      <div class="cta reveal">
         <div class="cta__txt">
           <h2>Interested in investing<br>or partnering with us?</h2>
           <p>We are happy to share more about our business, our numbers and our plans. Please choose “Investment or partnership” on the contact form.</p>
@@ -203,8 +203,8 @@
           <li><a href="index.html#representative">Message from the CEO</a></li>
           <li><a href="story.html">Our Story</a></li>
           <li><a href="company.html">Corporate Profile</a></li>
-                    <li><a href="partners.html">For Study-Abroad Agents</a></li>
-<li><a href="investors.html">For Investors</a></li>
+          <li><a href="partners.html">For Study-Abroad Agents</a></li>
+          <li><a href="investors.html">For Investors</a></li>
           <li><a href="column.html">Insights</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="recruit.html">Careers</a></li>
@@ -253,6 +253,23 @@
         });
       });
     }
+  })();
+</script>
+<script>
+  // scroll reveal (respects reduced motion)
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
   })();
 </script>
 </body>

@@ -116,8 +116,14 @@ def check_sitemap():
     ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     locs = {el.text.strip() for el in tree.getroot().findall("s:url/s:loc", ns)}
     for page in PAGES:
-        for url in (SITE + url_path(page), SITE + "en/" + url_path(page)):
-            if url not in locs:
+        for prefix in ("", "en/"):
+            rel = prefix + page
+            url = SITE + prefix + url_path(page)
+            noindex = 'content="noindex' in (ROOT / rel).read_text(encoding="utf-8")
+            # noindex pages must stay out of the sitemap; every other page must be in it
+            if noindex and url in locs:
+                err(f"sitemap.xml: {url} is noindex and should not be listed")
+            elif not noindex and url not in locs:
                 err(f"sitemap.xml: missing {url}")
 
 

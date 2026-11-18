@@ -66,7 +66,7 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="prose story">
+      <div class="prose story reveal">
         <h2>私も、留学生でした。</h2>
         <p>2012年、代表の薛 偉軒は中国から日本へ留学しました。言葉、進学、在留資格、そして就職。どの段階も、自分で手探りしながら進むしかありませんでした。</p>
         <p>翌2013年9月29日、彼は小さな私塾「知日」を開きます。自分と同じように日本の大学・大学院を目指す留学生を支えるためでした。留学生に何が必要かは、自分自身が一番よく知っていたからです。</p>
@@ -88,11 +88,11 @@
 
   <section class="section soft" id="timeline">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Timeline</span>
         <h2>XY Groupの歩み</h2>
       </div>
-      <div class="history">
+      <div class="history reveal">
         <div class="history__item">
           <div class="history__year">2012年</div>
           <div class="history__body">
@@ -152,7 +152,7 @@
 
   <section class="section--tight">
     <div class="wrap">
-      <div class="cta">
+      <div class="cta reveal">
         <div class="cta__txt">
           <h2>この先の歩みを、<br>一緒につくりませんか。</h2>
           <p>教育機関の方、投資家・パートナーの方、海外エージェントの方からのご連絡をお待ちしています。</p>
@@ -172,7 +172,7 @@
       <div class="footer__brand">
         <img class="logo" src="assets/logo-white.svg" alt="株式会社XY" width="80" height="32">
         <div class="brand-jp">株式会社XY</div>
-        <p>教育機関のためのシステム開発・DX支援。<br>教育現場を熟知する立場から、現場で回る仕組みを提供します。</p>
+        <p>学校を運営する私たちがつくる、<br>教育機関のためのソフトウェアとAI。</p>
       </div>
       <div class="footer__col">
         <h4>サービス・会社</h4>
@@ -184,8 +184,8 @@
           <li><a href="index.html#representative">代表メッセージ</a></li>
           <li><a href="story.html">私たちの歩み</a></li>
           <li><a href="company.html">会社概要</a></li>
-                    <li><a href="partners.html">海外エージェントの方へ</a></li>
-<li><a href="investors.html">投資家・パートナーの方へ</a></li>
+          <li><a href="partners.html">海外エージェントの方へ</a></li>
+          <li><a href="investors.html">投資家・パートナーの方へ</a></li>
           <li><a href="column.html">コラム</a></li>
           <li><a href="news.html">お知らせ</a></li>
           <li><a href="recruit.html">採用</a></li>
@@ -224,6 +224,23 @@
         toggle.querySelector('i').className = open ? 'ph ph-x' : 'ph ph-list';
       });
     }
+  })();
+</script>
+<script>
+  // scroll reveal (respects reduced motion)
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
   })();
 </script>
 </body>

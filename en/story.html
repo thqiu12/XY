@@ -69,7 +69,7 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="prose story">
+      <div class="prose story reveal">
         <h2>I was an international student, too.</h2>
         <p>In 2012, our CEO, Iken Setsu, came to Japan from China to study. Language, admissions, visas, finding a job — he had to work out every step on his own.</p>
         <p>On September 29, 2013, the following year, he opened a small private school called Chinichi to help international students like him prepare for Japanese universities and graduate schools. He knew what they needed, because he was one of them.</p>
@@ -91,11 +91,11 @@
 
   <section class="section soft" id="timeline">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Timeline</span>
         <h2>XY Group, year by year</h2>
       </div>
-      <div class="history">
+      <div class="history reveal">
         <div class="history__item">
           <div class="history__year">2012</div>
           <div class="history__body">
@@ -155,7 +155,7 @@
 
   <section class="section--tight">
     <div class="wrap">
-      <div class="cta">
+      <div class="cta reveal">
         <div class="cta__txt">
           <h2>Help us write<br>the next chapter.</h2>
           <p>We would love to hear from schools, investors, partners and study-abroad agents.</p>
@@ -188,8 +188,8 @@
           <li><a href="index.html#representative">Message from the CEO</a></li>
           <li><a href="story.html">Our Story</a></li>
           <li><a href="company.html">Corporate Profile</a></li>
-                    <li><a href="partners.html">For Study-Abroad Agents</a></li>
-<li><a href="investors.html">For Investors</a></li>
+          <li><a href="partners.html">For Study-Abroad Agents</a></li>
+          <li><a href="investors.html">For Investors</a></li>
           <li><a href="column.html">Insights</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="recruit.html">Careers</a></li>
@@ -238,6 +238,23 @@
         });
       });
     }
+  })();
+</script>
+<script>
+  // scroll reveal (respects reduced motion)
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
   })();
 </script>
 </body>

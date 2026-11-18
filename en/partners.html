@@ -69,7 +69,7 @@
 
   <section class="section--tight soft">
     <div class="wrap">
-      <div class="metrics">
+      <div class="metrics reveal">
         <div class="metric"><b>4,000+</b><div class="lbl">International students a year</div><div class="sub">Across XY Group</div></div>
         <div class="metric"><b>1 partner</b><div class="lbl">Several schools</div><div class="sub">Language schools and vocational colleges</div></div>
         <div class="metric"><b>Career</b><div class="lbl">A path to a career in Japan</div><div class="sub">Licensed job placement within the group</div></div>
@@ -79,11 +79,11 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Why partner with us</span>
         <h2>Built for the agents<br>who send students to Japan</h2>
       </div>
-    <div class="svc-grid">
+    <div class="svc-grid reveal">
       <div class="svc">
         <div class="svc__icon"><i class="ph ph-buildings"></i></div>
         <h3>Several schools, one partner</h3>
@@ -120,12 +120,12 @@
 
   <section class="section soft">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Our schools</span>
         <h2>Schools in XY Group</h2>
         <p>XY Group brings together Japanese language schools and educational corporations led by our CEO, Iken Setsu.</p>
       </div>
-    <div class="case-cards">
+    <div class="case-cards reveal">
       <div class="case-card">
         <span class="pill">Japanese language school</span>
         <h3>SGG Gaigo Gakuin</h3>
@@ -147,30 +147,30 @@
         <p>An educational corporation running a vocational school.</p>
       </div>
     </div>
-      <p class="cases__note">Hirai Gakuen and Haba Gakuen are educational corporations chaired by our CEO. Career support is provided by CCC Co., Ltd. (fee-charging job placement license No. 13-ユ-320024, issued by Japan's Ministry of Health, Labour and Welfare).</p>
+      <p class="cases__note reveal">Hirai Gakuen and Haba Gakuen are educational corporations chaired by our CEO. Career support is provided by CCC Co., Ltd. (fee-charging job placement license No. 13-ユ-320024, issued by Japan's Ministry of Health, Labour and Welfare).</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">How it works</span>
         <h2>From first contact to life in Japan</h2>
       </div>
-    <div class="case-flow">
+    <div class="case-flow reveal">
       <div class="step"><div class="n">STEP 1</div><div class="t">Contact us</div></div>
       <div class="step"><div class="n">STEP 2</div><div class="t">Partnership agreement</div></div>
       <div class="step"><div class="n">STEP 3</div><div class="t">Students apply online<br>(Compass)</div></div>
       <div class="step"><div class="n">STEP 4</div><div class="t">Admission and<br>Certificate of Eligibility</div></div>
       <div class="step"><div class="n">STEP 5</div><div class="t">Study and career<br>in Japan</div></div>
     </div>
-      <p class="cases__note">Intake periods, programs and requirements differ by school. We will share the details for each school when we talk.</p>
+      <p class="cases__note reveal">Intake periods, programs and requirements differ by school. We will share the details for each school when we talk.</p>
     </div>
   </section>
 
   <section class="section--tight">
     <div class="wrap">
-      <div class="cta">
+      <div class="cta reveal">
         <div class="cta__txt">
           <h2>Become a partner agent</h2>
           <p>Tell us about your agency, the countries you recruit from and the students you work with. On the contact form, choose “Study-abroad agent” as your organization type.</p>
@@ -203,8 +203,8 @@
           <li><a href="index.html#representative">Message from the CEO</a></li>
           <li><a href="story.html">Our Story</a></li>
           <li><a href="company.html">Corporate Profile</a></li>
-                    <li><a href="partners.html">For Study-Abroad Agents</a></li>
-<li><a href="investors.html">For Investors</a></li>
+          <li><a href="partners.html">For Study-Abroad Agents</a></li>
+          <li><a href="investors.html">For Investors</a></li>
           <li><a href="column.html">Insights</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="recruit.html">Careers</a></li>
@@ -253,6 +253,23 @@
         });
       });
     }
+  })();
+</script>
+<script>
+  // scroll reveal (respects reduced motion)
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
   })();
 </script>
 </body>
