@@ -32,49 +32,150 @@
 <link rel="stylesheet" href="css/style.css?v=23">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://xy-cloud.org/#organization",
+   "name": "株式会社XY",
+   "alternateName": "XY, K.K.",
+   "url": "https://xy-cloud.org/",
+   "logo": "https://xy-cloud.org/assets/apple-touch-icon.png",
+   "image": "https://xy-cloud.org/assets/og.png",
+   "email": "setsuiken@xy-cloud.org",
+   "telephone": "+81-80-4876-7999",
+   "foundingDate": "2024-02-07",
+   "founder": {
+    "@type": "Person",
+    "name": "薛 偉軒"
+   },
+   "areaServed": "JP",
+   "knowsAbout": [
+    "教育DX",
+    "学校向けCRM",
+    "学生出願管理システム",
+    "募集管理",
+    "AIエージェント",
+    "RAG",
+    "LLMチューニング",
+    "ローカルAI"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "postalCode": "169-0075",
+    "addressCountry": "JP",
+    "addressRegion": "東京都",
+    "addressLocality": "新宿区",
+    "streetAddress": "高田馬場一丁目28番10号 三慶ビル3階"
+   },
+   "description": "教育機関向けのCRM・学生管理・募集管理・人事管理システムおよびAIエージェントの開発・導入支援。教育業界のDXコンサルティング。",
+   "makesOffer": [
     {
-      "@type": "Organization",
-      "@id": "https://xy-cloud.org/#organization",
-      "name": "株式会社XY",
-      "alternateName": "XY, K.K.",
-      "url": "https://xy-cloud.org/",
-      "logo": "https://xy-cloud.org/assets/apple-touch-icon.png",
-      "image": "https://xy-cloud.org/assets/og.png",
-      "email": "setsuiken@xy-cloud.org",
-      "telephone": "+81-80-4876-7999",
-      "foundingDate": "2024-02-07",
-      "founder": { "@type": "Person", "name": "薛 偉軒" },
-      "areaServed": "JP",
-      "knowsAbout": ["教育DX", "学校向けCRM", "学生出願管理システム", "募集管理", "AIエージェント", "RAG", "LLMチューニング", "ローカルAI"],
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "169-0075",
-        "addressCountry": "JP",
-        "addressRegion": "東京都",
-        "addressLocality": "新宿区",
-        "streetAddress": "高田馬場一丁目28番10号 三慶ビル3階"
-      },
-      "description": "教育機関向けのCRM・学生管理・募集管理・人事管理システムおよびAIエージェントの開発・導入支援。教育業界のDXコンサルティング。",
-      "makesOffer": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "学校向けCRM", "serviceType": "教育機関向けCRM" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "学生管理システム" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "募集管理システム" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "人事・労務管理" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AIエージェント導入" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DXコンサルティング" } }
-      ]
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "学校向けCRM",
+      "serviceType": "教育機関向けCRM"
+     }
     },
     {
-      "@type": "WebSite",
-      "@id": "https://xy-cloud.org/#website",
-      "url": "https://xy-cloud.org/",
-      "name": "株式会社XY",
-      "inLanguage": "ja",
-      "publisher": { "@id": "https://xy-cloud.org/#organization" }
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "学生管理システム"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "募集管理システム"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "人事・労務管理"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "AIエージェント導入"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "DXコンサルティング"
+     }
     }
-  ]
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://xy-cloud.org/#website",
+   "url": "https://xy-cloud.org/",
+   "name": "株式会社XY",
+   "inLanguage": "ja",
+   "publisher": {
+    "@id": "https://xy-cloud.org/#organization"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://xy-cloud.org/#group",
+   "name": "XY Group",
+   "url": "https://xy-cloud.org/",
+   "description": "XY Groupは、日本語学校・専門学校・就職支援と、それを支えるテクノロジーを担う企業と学校の総称です。",
+   "knowsAbout": [
+    "日本語教育",
+    "留学生",
+    "専門学校",
+    "就職支援",
+    "教育DX"
+   ],
+   "member": [
+    {
+     "@id": "https://xy-cloud.org/#organization"
+    },
+    {
+     "@type": "Organization",
+     "name": "株式会社SGG外語学院",
+     "alternateName": "SGG Gaigo Gakuin",
+     "url": "https://sgg-school.com/",
+     "description": "日本語学校の運営（東京・大阪）"
+    },
+    {
+     "@type": "Organization",
+     "name": "知日株式会社",
+     "alternateName": "Chinichi Co., Ltd.",
+     "description": "日本語学校の運営と、留学生の募集・教育支援"
+    },
+    {
+     "@type": "Organization",
+     "name": "CCC株式会社",
+     "alternateName": "CCC Co., Ltd.",
+     "description": "留学生の就職支援"
+    },
+    {
+     "@type": "EducationalOrganization",
+     "name": "学校法人羽場学園",
+     "alternateName": "Haba Gakuen",
+     "description": "専門学校の運営"
+    },
+    {
+     "@type": "EducationalOrganization",
+     "name": "学校法人平井学園",
+     "alternateName": "Hirai Gakuen",
+     "description": "専門学校の運営"
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>
