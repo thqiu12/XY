@@ -25,35 +25,146 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/vendor/phosphor/phosphor.css?v=41c6055f">
-<link rel="stylesheet" href="css/style.css?v=25">
+<link rel="stylesheet" href="css/style.css?v=26">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
     {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://xy-cloud.org/" },
-        { "@type": "ListItem", "position": 2, "name": "よくある質問" }
-      ]
+     "@type": "ListItem",
+     "position": 1,
+     "name": "ホーム",
+     "item": "https://xy-cloud.org/"
     },
     {
-      "@type": "FAQPage",
-      "inLanguage": "ja",
-      "mainEntity": [
-        { "@type": "Question", "name": "学校向けCRMとは何ですか？", "acceptedAnswer": { "@type": "Answer", "text": "見込み学生から在校生・卒業生までの情報を一元管理し、問い合わせ対応や追客の状況を可視化する仕組みです。教育機関の募集・運営に特化した形でご提供します。" } },
-        { "@type": "Question", "name": "日本語学校や学習塾でも導入できますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。日本語学校・学習塾・専門学校など、規模や運営方針に合わせて導入いただけます。学生出願・管理システム「Compass」は、複数校・複数学科、留学生と日本人の出願を一つの仕組みで扱えます。" } },
-        { "@type": "Question", "name": "導入までの期間や費用はどのくらいですか？", "acceptedAnswer": { "@type": "Answer", "text": "ご要望や対象業務の範囲によって異なります。まずは現状をヒアリングし、無理のない導入プランとお見積もりをご提案します。お気軽にお問い合わせください。" } },
-        { "@type": "Question", "name": "今の業務やシステムを止めずに導入できますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。既存の運用を止めない「非破壊」の設計を重視しています。段階的な導入が可能で、まず一部の業務から始めることもできます。" } },
-        { "@type": "Question", "name": "AIエージェントでは何ができますか？", "acceptedAnswer": { "@type": "Answer", "text": "問い合わせの一次対応、提出書類のチェック、リマインド連絡などの定型業務の支援・自動化が可能です。RAG（検索拡張生成）による社内ナレッジ活用や、用途に合わせたLLMのチューニングにも対応します。" } },
-        { "@type": "Question", "name": "データのセキュリティや個人情報の扱いは大丈夫ですか？", "acceptedAnswer": { "@type": "Answer", "text": "レート制限や暗号化バックアップなど、運用面の安全対策を講じています。機密データを外部に出さずに運用したい場合は、ローカルAI（オンプレミス環境）での構築もご相談いただけます。" } },
-        { "@type": "Question", "name": "小規模な教育機関でも相談できますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。規模にかかわらずご相談いただけます。必要な範囲から小さく始め、運用に合わせて広げていく進め方が可能です。" } },
-        { "@type": "Question", "name": "開発から運用まで一社に任せられますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。株式会社XYは、現場の理解から開発・導入、運用の定着まで一貫して支援します（FDE：前方展開エンジニアの考え方）。" } },
-        { "@type": "Question", "name": "対応エリアはどこですか？", "acceptedAnswer": { "@type": "Answer", "text": "オンラインを中心に全国対応が可能です。本社は東京都新宿区高田馬場です。" } },
-        { "@type": "Question", "name": "まず何から相談すればよいですか？", "acceptedAnswer": { "@type": "Answer", "text": "現在の課題やお困りごとを、お問い合わせフォームまたはお電話（080-4876-7999）でお知らせください。ヒアリングのうえ、最適な進め方をご提案します。" } }
-      ]
+     "@type": "ListItem",
+     "position": 2,
+     "name": "よくある質問"
     }
-  ]
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "ja",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "XY Groupとは何ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "XY Groupは、日本語学校・専門学校・就職支援と、それを支えるテクノロジーを担う企業と学校の総称です。2013年、日本の大学・大学院を目指す留学生のための私塾「知日」から始まりました。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "グループにはどんな会社・学校がありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "株式会社XY（グループ全事業のシステム開発・運用とAX・DXの推進）、株式会社SGG外語学院（日本語学校の運営、東京・大阪）、知日株式会社（日本語学校の運営と、留学生の募集・教育支援）、CCC株式会社（留学生の就職支援）、学校法人羽場学園・平井学園（専門学校の運営）です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "求人はどこで見られますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "本部（労務・経理・総務）と専門学校の求人は、このサイトの採用情報に掲載しています。日本語学校（SGG外語学院）の日本語教師・事務職員の求人は、SGG外語学院 採用情報（sgg-school.com/recruit/）に掲載しています。どちらも各求人のページから応募フォームに進めます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "日本語学校への入学について知りたいのですが。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "入学や学校生活については、各校にお問い合わせください。SGG外語学院（東京・大阪）の案内は公式サイト（sgg-school.com）に掲載しています。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "学校向けCRMとは何ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "見込み学生から在校生・卒業生までの情報を一元管理し、問い合わせ対応や追客の状況を可視化する仕組みです。教育機関の募集・運営に特化した形でご提供します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "日本語学校や学習塾でも導入できますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。日本語学校・学習塾・専門学校など、規模や運営方針に合わせて導入いただけます。学生出願・管理システム「Compass」は、複数校・複数学科、留学生と日本人の出願を一つの仕組みで扱えます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "導入までの期間や費用はどのくらいですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ご要望や対象業務の範囲によって異なります。まずは現状をヒアリングし、無理のない導入プランとお見積もりをご提案します。お気軽にお問い合わせください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "今の業務やシステムを止めずに導入できますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。既存の運用を止めない「非破壊」の設計を重視しています。段階的な導入が可能で、まず一部の業務から始めることもできます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "AIエージェントでは何ができますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "問い合わせの一次対応、提出書類のチェック、リマインド連絡などの定型業務の支援・自動化が可能です。RAG（検索拡張生成）による社内ナレッジ活用や、用途に合わせたLLMのチューニングにも対応します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "データのセキュリティや個人情報の扱いは大丈夫ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "レート制限や暗号化バックアップなど、運用面の安全対策を講じています。機密データを外部に出さずに運用したい場合は、ローカルAI（オンプレミス環境）での構築もご相談いただけます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "小規模な教育機関でも相談できますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。規模にかかわらずご相談いただけます。必要な範囲から小さく始め、運用に合わせて広げていく進め方が可能です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "開発から運用まで一社に任せられますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。株式会社XYは、現場の理解から開発・導入、運用の定着まで一貫して支援します（FDE：前方展開エンジニアの考え方）。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "対応エリアはどこですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "オンラインを中心に全国対応が可能です。本社は東京都新宿区高田馬場です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "まず何から相談すればよいですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "現在の課題やお困りごとを、お問い合わせフォームまたはお電話（080-4876-7999）でお知らせください。ヒアリングのうえ、最適な進め方をご提案します。"
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>
@@ -81,12 +192,37 @@
     <div class="wrap">
       <div class="crumb"><a href="index.html">ホーム</a> ／ よくある質問</div>
       <h1>よくある質問</h1>
-      <p>教育機関向けのシステム導入・DX支援について、よくいただくご質問にお答えします。ここにない内容は、お気軽にお問い合わせください。</p>
+      <p>XY Groupと、教育機関向けのシステム導入・DX支援について、よくいただくご質問にお答えします。ここにない内容は、お気軽にお問い合わせください。</p>
+    </div>
+  </section>
+
+  <section class="section" id="faq-group">
+    <div class="wrap">
+      <h2 class="faq-h">XY Group について</h2>
+      <div class="faq">
+        <details class="faq__item">
+          <summary><span class="q">Q</span>XY Groupとは何ですか？<i class="ph ph-caret-down ico"></i></summary>
+          <div class="a">XY Groupは、日本語学校・専門学校・就職支援と、それを支えるテクノロジーを担う企業と学校の総称です。2013年、日本の大学・大学院を目指す留学生のための私塾「知日」から始まりました。<a href="about.html">私たちについて</a></div>
+        </details>
+        <details class="faq__item">
+          <summary><span class="q">Q</span>グループにはどんな会社・学校がありますか？<i class="ph ph-caret-down ico"></i></summary>
+          <div class="a">株式会社XY（グループ全事業のシステム開発・運用とAX・DXの推進）、株式会社SGG外語学院（日本語学校の運営、東京・大阪）、知日株式会社（日本語学校の運営と、留学生の募集・教育支援）、CCC株式会社（留学生の就職支援）、学校法人羽場学園・平井学園（専門学校の運営）です。<a href="about.html#group">グループの会社と学校</a></div>
+        </details>
+        <details class="faq__item">
+          <summary><span class="q">Q</span>求人はどこで見られますか？<i class="ph ph-caret-down ico"></i></summary>
+          <div class="a">本部（労務・経理・総務）と専門学校の求人は、このサイトの<a href="recruit.html">採用情報</a>に掲載しています。日本語学校（SGG外語学院）の日本語教師・事務職員の求人は、<a href="https://sgg-school.com/recruit/">SGG外語学院 採用情報</a>に掲載しています。どちらも各求人のページから応募フォームに進めます。</div>
+        </details>
+        <details class="faq__item">
+          <summary><span class="q">Q</span>日本語学校への入学について知りたいのですが。<i class="ph ph-caret-down ico"></i></summary>
+          <div class="a">入学や学校生活については、各校にお問い合わせください。SGG外語学院（東京・大阪）の案内は<a href="https://sgg-school.com/">公式サイト</a>に掲載しています。</div>
+        </details>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
+      <h2 class="faq-h">システム導入・DX支援について</h2>
       <div class="faq">
         <details class="faq__item">
           <summary><span class="q">Q</span>学校向けCRMとは何ですか？<i class="ph ph-caret-down ico"></i></summary>

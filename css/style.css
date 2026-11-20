@@ -869,3 +869,7 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .jf-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #jobs .job-item[hidden],#jobs .job-list[hidden],#jobs .job-sub[hidden],#jobs .job-group[hidden]{display:none!important}
 @media (max-width:560px){.jf-label{width:100%}}
+
+/* ===== 改善 r8（2026-11-20）：FAQ の見出し ===== */
+.faq-h{font-size:clamp(20px,2.4vw,26px);font-weight:800;color:var(--navy);margin:0 0 20px;letter-spacing:.02em}
+#faq-group + .section{padding-top:0}
