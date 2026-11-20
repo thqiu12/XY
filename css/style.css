@@ -745,3 +745,19 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .staff-voice p{margin:0 0 8px;font-weight:700;line-height:1.8}
 .staff-voice footer{font-size:13px;color:var(--muted)}
 @media (max-width:640px){.job-list{grid-template-columns:1fr}.staff-voice{grid-template-columns:80px 1fr}.staff-voice img{width:80px;height:80px}.job-group{padding:18px}}
+
+/* ===== 求人ページ・応募フォーム（xy_recruit.py） ===== */
+.job-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.job-table-wrap{overflow-x:auto}
+.job-table th{white-space:nowrap;vertical-align:top}
+.job-table td{line-height:1.85}
+.field__label{font-size:14.5px;font-weight:700;color:var(--ink)}
+.xy-radios{display:flex;flex-wrap:wrap;gap:10px 22px}
+.xy-radio,.xy-check{display:inline-flex;align-items:center;gap:8px;font-weight:700;cursor:pointer}
+.xy-radio input,.xy-check input{width:20px;height:20px;accent-color:var(--accent)}
+.xy-check{margin:4px 0 18px}
+.xy-two{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.xy-note{color:var(--muted);font-size:12.5px}
+.xy-privacy{background:var(--bg-soft);border-radius:var(--radius);padding:16px 18px;margin:6px 0 16px;font-size:13px;line-height:1.8;color:var(--ink-2)}
+.xy-privacy p{margin:6px 0 0}
+@media (max-width:640px){.xy-two{grid-template-columns:1fr}}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f2747">
+<meta property="og:image" content="https://xy-cloud.org/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>エントリー（応募フォーム）｜XY Group 採用情報</title>
+<meta name="description" content="XY Group の本部（労務・経理・総務）・専門学校の求人への応募フォームです。">
+<link rel="canonical" href="https://xy-cloud.org/entry.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="エントリー（応募フォーム）｜XY Group 採用情報">
+<meta property="og:description" content="XY Group の本部（労務・経理・総務）・専門学校の求人への応募フォームです。">
+<meta property="og:url" content="https://xy-cloud.org/entry.html">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/style.css?v=22">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://xy-cloud.org/" },
+        { "@type": "ListItem", "position": 2, "name": "採用情報" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "name": "採用情報｜XY Group",
+      "url": "https://xy-cloud.org/recruit.html",
+      "inLanguage": "ja",
+      "about": { "@type": "Organization", "name": "株式会社XY", "url": "https://xy-cloud.org/" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" id="nav">
+      <a class="nav__brand" href="index.html" aria-label="株式会社XY ホーム">
+        <img class="logo" src="assets/logo.svg" alt="" width="80" height="32">
+        <span class="brand-jp">株式会社XY</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html#group">グループ</a>
+        <a href="technology.html">テクノロジー</a>
+        <a href="cases.html">導入事例</a>
+        <a href="story.html">私たちの歩み</a>
+        <a href="recruit.html">採用</a>
+        <a href="company.html">会社概要</a>
+      </div>
+      <div class="nav__cta">
+        <div class="lang-switch" role="group" aria-label="言語"><span aria-current="true">JA</span><a href="en/recruit.html" hreflang="en" lang="en">EN</a></div>
+        <a class="nav__phone" href="tel:08048767999"><i class="ph-fill ph-phone-call"></i>080-4876-7999</a>
+        <a class="btn btn--primary" href="contact.html">お問い合わせ</a>
+        <button class="nav__toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false"><i class="ph ph-list"></i></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="crumb"><a href="index.html">ホーム</a> ／ <a href="recruit.html">採用情報</a> ／ エントリー</div>
+      <h1>エントリー</h1>
+      <p>本部（労務・経理・総務）・専門学校の求人への応募フォームです。日本語学校（SGG外語学院）の求人は <a href="https://sgg-school.com/recruit/entry/" style="color:#fff;text-decoration:underline">SGG外語学院 採用情報のフォーム</a> からご応募ください。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap" style="max-width:760px">
+      <form class="form" method="post" action="https://sgg-school.com/recruit/entry.php" enctype="multipart/form-data" id="entryForm">
+        <input type="hidden" name="from" value="xy">
+        <input type="hidden" name="t" value="">
+        <div class="field"><label for="f-job">応募する求人<span class="req">必須</span></label><select id="f-job" name="job" required><option value="">（選択してください）</option><option value="rikei-sagamihara" data-ctype="専門学校講師">中途採用｜非常勤 理系科目（数学、物理、生物）講師（神奈川柔整鍼灸専門学校）</option><option value="rikei-sagamihara-2" data-ctype="専門学校講師">中途採用｜非常勤 理系科目（数学、物理、生物）講師（神奈川柔整鍼灸専門学校）</option><option value="romu-keiri" data-ctype="バックオフィス">中途採用｜労務・経理（株式会社SGG外語学院 本部）</option><option value="somu" data-ctype="バックオフィス">中途採用｜総務（株式会社SGG外語学院 本部）</option></select></div>
+        <div class="field"><span class="field__label">応募職種<span class="req">必須</span></span><div class="xy-radios"><label class="xy-radio"><input type="radio" name="ctype" value="バックオフィス" required> バックオフィス</label><label class="xy-radio"><input type="radio" name="ctype" value="専門学校講師" required> 専門学校講師</label></div></div>
+        <div class="xy-two"><div class="field"><label for="f-sei">お名前（姓）<span class="req">必須</span></label><input id="f-sei" name="sei" required maxlength="40" autocomplete="family-name" placeholder="例：山田"></div><div class="field"><label for="f-mei">お名前（名）<span class="req">必須</span></label><input id="f-mei" name="mei" required maxlength="40" autocomplete="given-name" placeholder="例：花子"></div></div>
+        <div class="xy-two"><div class="field"><label for="f-seik">フリガナ（セイ）<span class="req">必須</span></label><input id="f-seik" name="seik" required maxlength="40" placeholder="例：ヤマダ"></div><div class="field"><label for="f-meik">フリガナ（メイ）<span class="req">必須</span></label><input id="f-meik" name="meik" required maxlength="40" placeholder="例：ハナコ"></div></div>
+        <div class="xy-two"><div class="field"><label for="f-birth">生年月日<span class="req">必須</span></label><input id="f-birth" name="birth" type="date" required autocomplete="bday"></div><div class="field"><label for="f-sex">性別<span class="req">必須</span></label><input id="f-sex" name="sex" required maxlength="20"></div></div>
+        <div class="field"><label for="f-zip">郵便番号<span class="req">必須</span></label><input id="f-zip" name="zip" required maxlength="10" inputmode="numeric" autocomplete="postal-code" placeholder="例：166-0003"></div>
+        <div class="field"><label for="f-addr">ご住所<span class="req">必須</span></label><input id="f-addr" name="addr" required maxlength="200" autocomplete="street-address"></div>
+        <div class="xy-two"><div class="field"><label for="f-tel">電話番号（携帯可）<span class="req">必須</span></label><input id="f-tel" name="tel" type="tel" required maxlength="20" inputmode="tel" autocomplete="tel" placeholder="例：09012345678"></div><div class="field"><label for="f-mail">メールアドレス<span class="req">必須</span></label><input id="f-mail" name="email" type="email" required maxlength="200" autocomplete="email"></div></div>
+        <div class="field"><label for="f-cv">履歴書<span class="req">必須</span></label><input id="f-cv" name="cv" type="file" required accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png"><small class="xy-note">PDF・Word・Excel・画像（JPG/PNG）、5MB 以内</small></div>
+        <div class="field"><label for="f-pr">PRポイント<span class="req">必須</span></label><textarea id="f-pr" name="pr" required maxlength="4000" placeholder="簡単で結構ですので、あなたのPRポイントをご記載ください。"></textarea></div>
+        <div class="hp" aria-hidden="true" style="position:absolute;left:-9999px"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <div class="xy-privacy">
+          <b>個人情報の取り扱いについて</b>
+          <p>ご入力いただいた個人情報は、応募先の法人（本部の求人：株式会社SGG外語学院／専門学校の求人：学校法人平井学園）が、採用選考および選考結果のご連絡のために利用します。ご本人の同意なく第三者に提供することはありません。個人情報のご提出は任意ですが、必須の項目を入力されない場合は採用選考に進めません。開示・訂正・削除・利用停止等のご請求は、株式会社SGG外語学院（03-6681-5972、平日 8:30〜17:30）までご連絡ください。選考結果の理由等についてのお問い合わせにはお答えできません。</p>
+        </div>
+        <label class="xy-check"><input type="checkbox" name="agree" value="1" required> 個人情報の取り扱いについて同意する</label>
+        <button type="submit" class="btn btn--primary"><i class="ph ph-paper-plane-tilt"></i>応募内容を送信する</button>
+        <p class="form__note">送信すると、応募内容と履歴書が採用担当者に届きます。</p>
+      </form>
+    </div>
+  </section>
+</main>
+<script>(function(){var f=document.getElementById("entryForm");f.querySelector("[name=t]").value=Date.now();
+var sel=document.getElementById("f-job");function pick(){var o=sel.options[sel.selectedIndex];var c=o&&o.getAttribute("data-ctype");if(c){var r=f.querySelector('input[name=ctype][value="'+c+'"]');if(r)r.checked=true;}}
+var m=location.search.match(/[?&]job=([\w-]+)/);if(m){sel.value=m[1];pick();}sel.addEventListener("change",pick);
+f.addEventListener("submit",function(ev){var c=document.getElementById("f-cv").files[0];if(c&&c.size>5*1024*1024){ev.preventDefault();alert("履歴書のファイルは5MB以内にしてください。");}});})();</script>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img class="logo" src="assets/logo-white.svg" alt="株式会社XY" width="80" height="32">
+        <div class="brand-jp">株式会社XY</div>
+        <p>学校を運営する私たちがつくる、<br>教育機関のためのソフトウェアとAI。</p>
+      </div>
+      <div class="footer__col">
+        <h4>サービス・会社</h4>
+        <ul>
+          <li><a href="technology.html">テクノロジー</a></li>
+          <li><a href="fde.html">FDEとは</a></li>
+          <li><a href="technology.html#strengths">XYの強み</a></li>
+          <li><a href="cases.html">導入事例</a></li>
+          <li><a href="index.html#representative">代表メッセージ</a></li>
+          <li><a href="story.html">私たちの歩み</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="partners.html">海外エージェントの方へ</a></li>
+          <li><a href="investors.html">投資家・パートナーの方へ</a></li>
+          <li><a href="column.html">コラム</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="recruit.html">採用</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__contact">
+        <h4>お問い合わせ</h4>
+        <div><i class="ph-fill ph-map-pin"></i><span>〒169-0075<br>東京都新宿区高田馬場一丁目28番10号 三慶ビル3階</span></div>
+        <div><i class="ph-fill ph-phone-call"></i><span><a href="tel:08048767999" style="color:inherit">080-4876-7999</a></span></div>
+        <div><i class="ph-fill ph-envelope-simple"></i><span><a href="mailto:setsuiken@xy-cloud.org" style="color:inherit">setsuiken@xy-cloud.org</a></span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 株式会社XY (XY, K.K.) All rights reserved.</p>
+      <div class="legal">
+        <a href="company.html">会社概要</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="en/recruit.html" hreflang="en" lang="en">English</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="float-cta" href="contact.html" aria-label="お問い合わせ"><i class="ph-fill ph-chat-circle-dots"></i>お問い合わせ</a>
+
+<script>
+  (function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.querySelector('i').className = open ? 'ph ph-x' : 'ph ph-list';
+      });
+    }
+  })();
+</script>
+</body>
+</html>
