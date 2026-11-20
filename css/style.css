@@ -857,3 +857,15 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .lang-switch a, .lang-switch span { display: inline-flex; align-items: center; min-height: 30px; padding: 4px 12px; }
 @media (max-width:420px){.lang-switch a, .lang-switch span{padding:4px 8px}}
 @media (max-width:369px){.gx-header .nav__brand .brand-jp{display:none}}
+
+/* ===== 採用：勤務地で探す（xy_recruit.py） ===== */
+.jf{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 28px}
+.jf-label{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:var(--navy);margin-right:6px}
+.jf-btn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink-2);font:inherit;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.jf-btn small{font-family:"Outfit",sans-serif;font-size:13px;color:var(--ink-3,#6b7280)}
+.jf-btn:hover{border-color:var(--accent);color:var(--accent-ink)}
+.jf-btn[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.jf-btn[aria-pressed="true"] small{color:rgba(255,255,255,.75)}
+.jf-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#jobs .job-item[hidden],#jobs .job-list[hidden],#jobs .job-sub[hidden],#jobs .job-group[hidden]{display:none!important}
+@media (max-width:560px){.jf-label{width:100%}}
