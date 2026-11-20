@@ -22,6 +22,7 @@
 - [私たちの歩み](https://xy-cloud.org/story.html)
 - [会社概要（株式会社XY）](https://xy-cloud.org/company.html)
 - [採用情報](https://xy-cloud.org/recruit.html): グループの求人。本部・専門学校の求人はこのサイト、日本語学校の求人は SGG外語学院 採用情報（https://sgg-school.com/recruit/）
+- [日本語教師の先生インタビュー（SGG外語学院 高田馬場校）](https://sgg-school.com/recruit/interview/) と [日本語教師の方へのよくある質問（高田馬場校）](https://sgg-school.com/recruit/faq/)
 - [お知らせ](https://xy-cloud.org/news.html)
 - [お問い合わせ](https://xy-cloud.org/contact.html)
 - [よくある質問](https://xy-cloud.org/faq.html)
