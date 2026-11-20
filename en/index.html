@@ -28,52 +28,152 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-<link rel="stylesheet" href="../css/style.css?v=23">
+<link rel="stylesheet" href="../css/style.css?v=24">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://xy-cloud.org/#organization",
+   "name": "XY, K.K.",
+   "alternateName": "株式会社XY",
+   "url": "https://xy-cloud.org/en/",
+   "logo": "https://xy-cloud.org/assets/apple-touch-icon.png",
+   "image": "https://xy-cloud.org/assets/og-en.png",
+   "email": "setsuiken@xy-cloud.org",
+   "telephone": "+81-80-4876-7999",
+   "foundingDate": "2024-02-07",
+   "founder": {
+    "@type": "Person",
+    "name": "Iken Setsu"
+   },
+   "duns": "964338668",
+   "knowsAbout": [
+    "Education technology",
+    "School CRM",
+    "Student application management",
+    "Student recruitment",
+    "AI agents",
+    "RAG",
+    "LLM tuning",
+    "On-premise AI"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "postalCode": "169-0075",
+    "addressCountry": "JP",
+    "addressRegion": "Tokyo",
+    "addressLocality": "Shinjuku-ku",
+    "streetAddress": "3F Sankei Bldg., 1-28-10 Takadanobaba"
+   },
+   "description": "Development and deployment of CRM, student management, recruitment and HR systems and AI agents for educational institutions, plus operations consulting.",
+   "makesOffer": [
     {
-      "@type": "Organization",
-      "@id": "https://xy-cloud.org/#organization",
-      "name": "XY, K.K.",
-      "alternateName": "株式会社XY",
-      "url": "https://xy-cloud.org/en/",
-      "logo": "https://xy-cloud.org/assets/apple-touch-icon.png",
-      "image": "https://xy-cloud.org/assets/og-en.png",
-      "email": "setsuiken@xy-cloud.org",
-      "telephone": "+81-80-4876-7999",
-      "foundingDate": "2024-02-07",
-      "founder": { "@type": "Person", "name": "Iken Setsu" },
-      "duns": "964338668",
-      "knowsAbout": ["Education technology", "School CRM", "Student application management", "Student recruitment", "AI agents", "RAG", "LLM tuning", "On-premise AI"],
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "169-0075",
-        "addressCountry": "JP",
-        "addressRegion": "Tokyo",
-        "addressLocality": "Shinjuku-ku",
-        "streetAddress": "3F Sankei Bldg., 1-28-10 Takadanobaba"
-      },
-      "description": "Development and deployment of CRM, student management, recruitment and HR systems and AI agents for educational institutions, plus operations consulting.",
-      "makesOffer": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "School CRM" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Student management system" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recruitment and admissions system" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HR and staff management" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI agent deployment" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Operations consulting" } }
-      ]
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "School CRM"
+     }
     },
     {
-      "@type": "WebSite",
-      "@id": "https://xy-cloud.org/en/#website",
-      "url": "https://xy-cloud.org/en/",
-      "name": "XY, K.K.",
-      "inLanguage": "en",
-      "publisher": { "@id": "https://xy-cloud.org/#organization" }
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Student management system"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Recruitment and admissions system"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "HR and staff management"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "AI agent deployment"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Operations consulting"
+     }
     }
-  ]
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://xy-cloud.org/en/#website",
+   "url": "https://xy-cloud.org/en/",
+   "name": "XY, K.K.",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://xy-cloud.org/#organization"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://xy-cloud.org/#group",
+   "name": "XY Group",
+   "url": "https://xy-cloud.org/",
+   "description": "XY Group is the name for the companies and schools behind our Japanese language schools, vocational colleges, career support and technology.",
+   "knowsAbout": [
+    "Japanese language education",
+    "International students",
+    "Vocational education",
+    "Career support",
+    "Education technology"
+   ],
+   "member": [
+    {
+     "@id": "https://xy-cloud.org/#organization"
+    },
+    {
+     "@type": "Organization",
+     "name": "株式会社SGG外語学院",
+     "alternateName": "SGG Gaigo Gakuin",
+     "url": "https://sgg-school.com/",
+     "description": "Japanese language schools in Tokyo and Osaka"
+    },
+    {
+     "@type": "Organization",
+     "name": "知日株式会社",
+     "alternateName": "Chinichi Co., Ltd.",
+     "description": "Operates a Japanese language school and supports the recruitment and education of international students"
+    },
+    {
+     "@type": "Organization",
+     "name": "CCC株式会社",
+     "alternateName": "CCC Co., Ltd.",
+     "description": "Career support for international students"
+    },
+    {
+     "@type": "EducationalOrganization",
+     "name": "学校法人羽場学園",
+     "alternateName": "Haba Gakuen",
+     "description": "Operates vocational colleges"
+    },
+    {
+     "@type": "EducationalOrganization",
+     "name": "学校法人平井学園",
+     "alternateName": "Hirai Gakuen",
+     "description": "Operates vocational colleges"
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>

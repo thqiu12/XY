@@ -1,0 +1,33 @@
+# XY Group
+
+> XY Groupは、日本語学校・専門学校・就職支援と、それを支えるテクノロジーを担う企業と学校の総称です。留学生の「学ぶ」から「働く」までを支えています。2013年、日本の大学・大学院を目指す留学生のための私塾「知日」から始まりました。
+
+このサイト（xy-cloud.org）は XY Group と、グループの中核でシステム開発を担う株式会社XY の公式サイトです。
+
+## グループの会社と学校
+
+- 株式会社XY：グループ全事業のシステム開発・運用と、AX・DXの推進
+- 株式会社SGG外語学院：日本語学校の運営（東京・大阪）。公式サイト https://sgg-school.com/
+- 知日株式会社：日本語学校の運営と、留学生の募集・教育支援
+- CCC株式会社：留学生の就職支援
+- 学校法人羽場学園・学校法人平井学園：専門学校の運営
+
+## 主なページ
+
+- [私たちについて](https://xy-cloud.org/about.html): Vision・Mission、代表メッセージ、グループの会社と学校
+- [事業分野](https://xy-cloud.org/business.html): 日本語学校・専門学校・就職支援・テクノロジー
+- [テクノロジー](https://xy-cloud.org/technology.html): 株式会社XY のシステム開発（Compass、chinichi-OS、FDE）
+- [Compass](https://xy-cloud.org/compass.html): 学校向けの募集・出願管理システム
+- [導入事例](https://xy-cloud.org/cases.html)
+- [私たちの歩み](https://xy-cloud.org/story.html)
+- [会社概要（株式会社XY）](https://xy-cloud.org/company.html)
+- [採用情報](https://xy-cloud.org/recruit.html): グループの求人。本部・専門学校の求人はこのサイト、日本語学校の求人は SGG外語学院 採用情報（https://sgg-school.com/recruit/）
+- [お知らせ](https://xy-cloud.org/news.html)
+- [お問い合わせ](https://xy-cloud.org/contact.html)
+- [よくある質問](https://xy-cloud.org/faq.html)
+
+## English
+
+- [About us](https://xy-cloud.org/en/about.html)
+- [Our business](https://xy-cloud.org/en/business.html)
+- [Careers](https://xy-cloud.org/en/recruit.html)

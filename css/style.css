@@ -852,3 +852,8 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
   .gx-sec{padding:70px 0}.gx-careers{padding-top:70px}.gx-careers__card img{height:260px}
 }
 @media (max-width:560px){.gx-biz{grid-template-columns:1fr}.gx-nums{grid-template-columns:1fr}.gx-nums div+div{border-left:0;border-top:1px solid var(--line)}.gx-header .gx-pill{display:none}}
+
+/* ===== 改善 r2（2026-11-20）：言語切替のタップ領域 ===== */
+.lang-switch a, .lang-switch span { display: inline-flex; align-items: center; min-height: 30px; padding: 4px 12px; }
+@media (max-width:420px){.lang-switch a, .lang-switch span{padding:4px 8px}}
+@media (max-width:369px){.gx-header .nav__brand .brand-jp{display:none}}
