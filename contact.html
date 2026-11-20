@@ -212,6 +212,7 @@
         .then(function (r) { return r.json(); })
         .then(function (data) {
           if (data.success) {
+            if (window.gtag) gtag('event', 'generate_lead', { form_name: 'contact' });
             form.reset();
             setStatus('success', 'お問い合わせを送信しました。担当者より折り返しご連絡いたします。');
           } else {
