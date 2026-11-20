@@ -1,0 +1,120 @@
+/* Phosphor Icons 2.1.1（MIT）の、このサイトで使うアイコンだけのサブセット。kasei/xy-redesign/icons.py が生成 */
+@font-face {
+  font-family: "Phosphor";
+  src: url("regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ph {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Phosphor" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ph.ph-arrow-down:before{content:"\e03e"}
+.ph.ph-arrow-right:before{content:"\e06c"}
+.ph.ph-arrow-up-right:before{content:"\e092"}
+.ph.ph-arrows-clockwise:before{content:"\e094"}
+.ph.ph-binoculars:before{content:"\ea64"}
+.ph.ph-buildings:before{content:"\e102"}
+.ph.ph-calendar-blank:before{content:"\e10a"}
+.ph.ph-caret-down:before{content:"\e136"}
+.ph.ph-chalkboard-teacher:before{content:"\e600"}
+.ph.ph-circle-notch:before{content:"\eb44"}
+.ph.ph-code:before{content:"\e1bc"}
+.ph.ph-database:before{content:"\e1de"}
+.ph.ph-globe-hemisphere-east:before{content:"\e28a"}
+.ph.ph-handshake:before{content:"\e582"}
+.ph.ph-hard-drives:before{content:"\e2a0"}
+.ph.ph-house:before{content:"\e2c2"}
+.ph.ph-identification-badge:before{content:"\e6f6"}
+.ph.ph-identification-card:before{content:"\e2c8"}
+.ph.ph-list:before{content:"\e2f0"}
+.ph.ph-list-checks:before{content:"\eadc"}
+.ph.ph-list-magnifying-glass:before{content:"\ebe0"}
+.ph.ph-map-pin:before{content:"\e316"}
+.ph.ph-megaphone-simple:before{content:"\e642"}
+.ph.ph-paper-plane-tilt:before{content:"\e398"}
+.ph.ph-path:before{content:"\e39c"}
+.ph.ph-robot:before{content:"\e762"}
+.ph.ph-seal-check:before{content:"\e606"}
+.ph.ph-sliders-horizontal:before{content:"\e434"}
+.ph.ph-stack:before{content:"\e466"}
+.ph.ph-strategy:before{content:"\ea3a"}
+.ph.ph-student:before{content:"\e73e"}
+.ph.ph-users-three:before{content:"\e68e"}
+.ph.ph-wrench:before{content:"\e5d4"}
+.ph.ph-x:before{content:"\e4f6"}
+@font-face {
+  font-family: "Phosphor-Fill";
+  src: url("fill.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ph-fill {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Phosphor-Fill" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ph-fill.ph-buildings:before{content:"\e102"}
+.ph-fill.ph-chart-line-down:before{content:"\e8b6"}
+.ph-fill.ph-chat-circle-dots:before{content:"\e16c"}
+.ph-fill.ph-check-circle:before{content:"\e184"}
+.ph-fill.ph-clock-countdown:before{content:"\ed2c"}
+.ph-fill.ph-code:before{content:"\e1bc"}
+.ph-fill.ph-compass:before{content:"\e1c8"}
+.ph-fill.ph-envelope-simple:before{content:"\e218"}
+.ph-fill.ph-files:before{content:"\e710"}
+.ph-fill.ph-graduation-cap:before{content:"\e62c"}
+.ph-fill.ph-handshake:before{content:"\e582"}
+.ph-fill.ph-headset:before{content:"\e584"}
+.ph-fill.ph-map-pin:before{content:"\e316"}
+.ph-fill.ph-minus-circle:before{content:"\e32c"}
+.ph-fill.ph-paper-plane-tilt:before{content:"\e398"}
+.ph-fill.ph-phone-call:before{content:"\e3ba"}
+.ph-fill.ph-robot:before{content:"\e762"}
+.ph-fill.ph-rocket-launch:before{content:"\e3fe"}
+.ph-fill.ph-stack:before{content:"\e466"}
+.ph-fill.ph-translate:before{content:"\e4a2"}
+.ph-fill.ph-users-three:before{content:"\e68e"}
