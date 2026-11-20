@@ -761,3 +761,94 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 .xy-privacy{background:var(--bg-soft);border-radius:var(--radius);padding:16px 18px;margin:6px 0 16px;font-size:13px;line-height:1.8;color:var(--ink-2)}
 .xy-privacy p{margin:6px 0 0}
 @media (max-width:640px){.xy-two{grid-template-columns:1fr}}
+
+/* ===================== グループ優先リニューアル（WEWORLD 型、2026-11-20、xy-redesign/apply.py） ===================== */
+:root{--gx-lavender:#eef1fb;--gx-soft:#f4f6fa}
+.gx-header{background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.gx-header .nav__brand .brand-jp{font-size:13px;letter-spacing:.12em;font-weight:900;color:var(--navy)}
+.gx-header .nav__links{gap:26px;margin:0 auto}
+.gx-header .nav__links a{font-weight:700;font-size:14px}
+.gx-header .nav__links a[aria-current]{color:var(--accent)}
+.gx-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;background:#111;color:#fff;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap;transition:transform .2s var(--ease)}
+.gx-pill:hover{transform:translateY(-1px);color:#fff}
+.gx-pill--light{background:#fff;color:var(--navy);box-shadow:0 4px 18px rgba(15,39,71,.08);padding:14px 28px;font-size:16px}
+.gx-pill--light:hover{color:var(--navy)}
+.gx-hero{position:relative;height:min(720px,calc(100vh - 72px));min-height:520px;overflow:hidden;background:var(--navy)}
+.gx-hero__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.gx-hero__panel{position:absolute;inset:0;background:linear-gradient(100deg,var(--navy) 0%,var(--navy) 36%,rgba(15,39,71,.82) 46%,rgba(15,39,71,0) 62%);clip-path:polygon(0 0,58% 0,44% 100%,0 100%)}
+.gx-hero__copy{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:0 24px;height:100%;display:flex;flex-direction:column;justify-content:center;color:#fff}
+.gx-hero__eyebrow{font-size:13px;letter-spacing:.14em;opacity:.85;margin:0 0 18px}
+.gx-hero h1{font-family:"Noto Serif JP",serif;font-weight:700;font-size:clamp(36px,5.4vw,68px);line-height:1.45;letter-spacing:.06em;margin:0;color:#fff}
+.gx-hero__sub{margin:26px 0 0;padding-top:20px;border-top:2px solid rgba(255,255,255,.6);display:inline-block;align-self:flex-start;font-size:clamp(15px,1.6vw,19px);font-weight:700;letter-spacing:.08em}
+.gx-sec{padding:104px 0}
+.gx-sec--soft{background:var(--gx-soft)}
+.gx-en{font-family:"Outfit",var(--font,system-ui),sans-serif;font-weight:600;font-size:clamp(42px,6vw,74px);line-height:1.05;letter-spacing:-.01em;margin:0;color:var(--ink)}
+.gx-en em{font-style:normal;color:var(--accent)}
+.gx-jp{font-size:clamp(18px,2vw,23px);font-weight:700;margin:14px 0 16px;color:var(--ink)}
+.gx-arrow{display:inline-flex;align-items:center;gap:16px;margin-top:24px;text-decoration:none;font-weight:700;font-size:16.5px;color:var(--ink)}
+.gx-arrow i{display:grid;place-items:center;width:60px;height:60px;border-radius:50%;background:var(--navy);color:#fff;font-size:21px;transition:transform .25s var(--ease)}
+.gx-arrow:hover i{transform:translateX(6px)}
+.gx-split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.gx-split img{width:100%;height:auto;display:block}
+.gx-split--rev>:first-child{order:2}
+.gx-slant img{clip-path:polygon(12% 0,100% 0,88% 100%,0 100%)}
+.gx-round,.gx-split picture img{border-radius:22px}
+.gx-slant img{border-radius:0}
+.gx-nums{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:56px}
+.gx-nums div{padding:26px 20px;text-align:center}
+.gx-nums div+div{border-left:1px solid var(--line)}
+.gx-nums b{display:block;font-family:"Outfit",sans-serif;font-size:44px;color:var(--navy);line-height:1.2}
+.gx-nums span{color:var(--muted);font-size:14px}
+.gx-biz{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.gx-biz a{display:block;text-decoration:none;color:var(--ink);background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 28px rgba(15,39,71,.07);transition:transform .25s var(--ease)}
+.gx-biz a:hover{transform:translateY(-4px)}
+.gx-biz img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.gx-biz div{padding:18px 20px 22px}
+.gx-biz small{font-family:"Outfit",sans-serif;font-size:12px;letter-spacing:.14em;color:var(--accent);text-transform:uppercase}
+.gx-biz h3{margin:4px 0 6px;font-size:19px}
+.gx-biz p{margin:0;color:var(--muted);font-size:14px;line-height:1.75}
+.gx-msg{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center}
+.gx-msg>img{width:100%;border-radius:22px;aspect-ratio:4/5;object-fit:cover}
+.gx-sign{font-weight:700}
+.gx-news{margin-top:34px;border-top:1px solid #cfd6e1}
+.gx-news a{display:grid;grid-template-columns:110px 110px 1fr;gap:24px;align-items:center;padding:20px 8px;border-bottom:1px solid #cfd6e1;text-decoration:none;color:var(--navy-2)}
+.gx-news a:hover{background:var(--gx-soft)}
+.gx-news time{font-family:"Outfit",sans-serif;font-size:16px;color:var(--ink)}
+.gx-tag{border:1px solid var(--ink);color:var(--ink);text-align:center;font-size:12px;padding:2px 0}
+.gx-careers{background:var(--navy);color:#fff;padding:104px 0 0}
+.gx-careers .gx-en{color:#fff}.gx-careers .gx-en em{color:#8fb3ff}
+.gx-careers p{font-size:clamp(17px,2vw,22px);margin:18px 0 40px}
+.gx-careers__card{position:relative;border-radius:22px 22px 0 0;overflow:hidden}
+.gx-careers__card img{width:100%;height:420px;object-fit:cover;display:block}
+.gx-careers__card a{position:absolute;right:28px;bottom:28px;background:#fff;color:var(--navy);text-decoration:none;font-weight:700;padding:14px 22px;border-radius:999px;display:flex;gap:10px;align-items:center}
+.gx-doors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.gx-doors a{display:flex;flex-direction:column;gap:8px;padding:26px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);transition:border-color .2s}
+.gx-doors a:hover{border-color:var(--accent)}
+.gx-doors i{font-size:30px;color:var(--accent)}
+.gx-doors b{font-size:18px}
+.gx-doors span{color:var(--muted);font-size:14px}
+.gx-footer{background:none;color:var(--ink);padding:0}
+.gx-ft{display:grid;grid-template-columns:1.3fr 1fr}
+.gx-ft__links{background:var(--gx-lavender);padding:60px 48px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.gx-ft__links h4{margin:0 0 12px;font-size:15px;color:var(--navy)}
+.gx-ft__links ul{list-style:none;margin:0;padding:0;font-size:13.5px;line-height:2.2}
+.gx-ft__links a{text-decoration:none;color:var(--ink)}
+.gx-ft__links a:hover{color:var(--accent)}
+.gx-ft__brand{background:var(--gx-soft);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:52px 24px;text-align:center}
+.gx-ft__brand p{margin:0;font-size:13px;color:var(--muted);line-height:1.9}
+.gx-ft__brand p a{color:var(--muted)}
+.gx-ft__legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:18px 48px;font-size:12px;color:var(--muted);background:#fff}
+.gx-ft__legal a{text-decoration:none;margin-right:18px;color:var(--muted)}
+@media (max-width:1080px){.gx-header .nav__links{gap:18px}.gx-header .nav__links a{font-size:13px}}
+@media (max-width:960px){
+  .gx-hero__panel{clip-path:none;background:linear-gradient(0deg,rgba(15,39,71,.92) 0%,rgba(15,39,71,.55) 55%,rgba(15,39,71,.1) 100%)}
+  .gx-hero__copy{justify-content:flex-end;padding-bottom:64px}
+  .gx-split,.gx-msg{grid-template-columns:1fr;gap:30px}.gx-split--rev>:first-child{order:0}
+  .gx-msg>img{max-width:260px}
+  .gx-biz{grid-template-columns:1fr 1fr}
+  .gx-news a{grid-template-columns:1fr;gap:4px}.gx-tag{width:90px}
+  .gx-doors{grid-template-columns:1fr}
+  .gx-ft{grid-template-columns:1fr}.gx-ft__links{grid-template-columns:1fr 1fr;padding:40px 24px}.gx-ft__legal{padding:18px 24px}
+  .gx-sec{padding:70px 0}.gx-careers{padding-top:70px}.gx-careers__card img{height:260px}
+}
+@media (max-width:560px){.gx-biz{grid-template-columns:1fr}.gx-nums{grid-template-columns:1fr}.gx-nums div+div{border-left:0;border-top:1px solid var(--line)}.gx-header .gx-pill{display:none}}
