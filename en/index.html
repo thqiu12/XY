@@ -25,10 +25,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-<link rel="stylesheet" href="../css/style.css?v=21">
+<link rel="stylesheet" href="../css/style.css?v=23">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,25 +80,17 @@
 <body>
 
 <!-- ===================== HEADER ===================== -->
-<header class="site-header">
+<header class="site-header gx-header">
   <div class="wrap">
     <nav class="nav" id="nav">
-      <a class="nav__brand" href="index.html" aria-label="XY, K.K. home">
+      <a class="nav__brand" href="index.html" aria-label="XY Group home">
         <img class="logo" src="../assets/logo.svg" alt="" width="80" height="32">
-        <span class="brand-jp">XY, K.K.</span>
+        <span class="brand-jp">XY GROUP</span>
       </a>
-      <div class="nav__links">
-        <a href="index.html#group">Group</a>
-        <a href="technology.html">Technology</a>
-        <a href="partners.html">For Agents</a>
-        <a href="story.html">Our Story</a>
-        <a href="recruit.html">Careers</a>
-        <a href="company.html">Company</a>
-      </div>
+      <div class="nav__links"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="business.html">Business</a><a href="technology.html">Technology</a><a href="recruit.html">Careers</a><a href="news.html">News</a></div>
       <div class="nav__cta">
         <div class="lang-switch" role="group" aria-label="Language"><a href="../" hreflang="ja" lang="ja">JA</a><span aria-current="true">EN</span></div>
-        <a class="nav__phone" href="tel:+818048767999"><i class="ph-fill ph-phone-call"></i>+81-80-4876-7999</a>
-        <a class="btn btn--primary" href="contact.html">Contact us</a>
+        <a class="gx-pill" href="contact.html">Contact us</a>
         <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><i class="ph ph-list"></i></button>
       </div>
     </nav>
@@ -106,219 +98,104 @@
 </header>
 
 <main>
-<!-- ===================== HERO ===================== -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero__inner hero__inner--shot">
-      <div class="hero__copy">
-        <span class="hero__eyebrow"><i class="ph-fill ph-graduation-cap"></i>XY Group | From Tokyo to the world</span>
-        <h1>Study and work in Japan.<br><span class="accent">One group, every step.</span></h1>
-        <p class="hero__lead">XY Group brings together Japanese language schools, vocational colleges, career support and the technology behind them. We support more than 4,000 international students a year, from their first class to their first job in Japan.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#group"><i class="ph ph-buildings"></i>Explore the group</a>
-          <a class="btn btn--ghost" href="partners.html"><i class="ph ph-handshake"></i>For study-abroad agents</a>
-        </div>
-        <div class="hero__meta">
-          <div><b>Since 2013</b><span>Began as a small school</span></div>
-          <div><b>4,000+</b><span>International students a year</span></div>
-          <div><b>3 pillars</b><span>Schools, careers, technology</span></div>
-        </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero-card">
-          <div class="hero-card__tag">XY GROUP</div>
-          <div class="hero-card__big">XY<small>From study to career in Japan</small></div>
-          <div class="hero-card__list">
-            <div><i class="ph-fill ph-check-circle"></i>Japanese language schools | SGG Gaigo Gakuin, Chinichi</div>
-            <div><i class="ph-fill ph-check-circle"></i>Vocational colleges | Haba Gakuen, Hirai Gakuen</div>
-            <div><i class="ph-fill ph-check-circle"></i>Careers | CCC (licensed staffing and job placement)</div>
-            <div><i class="ph-fill ph-check-circle"></i>Technology | XY, K.K.</div>
-          </div>
-        </div>
-      </div>
+  <section class="gx-hero">
+    <picture class="gx-hero__img"><source type="image/webp" srcset="../assets/photos/activity-shodo-800.webp 800w, ../assets/photos/activity-shodo-1600.webp 1600w" sizes="100vw"><img src="../assets/photos/activity-shodo-800.jpg" srcset="../assets/photos/activity-shodo-800.jpg 800w, ../assets/photos/activity-shodo-1600.jpg 1600w" sizes="100vw" alt="International students in a calligraphy class" fetchpriority="high" decoding="async"></picture>
+    <div class="gx-hero__panel"></div>
+    <div class="gx-hero__copy">
+      <p class="gx-hero__eyebrow">XY Group | From Tokyo to the world</p>
+      <h1>Study in Japan.<br>Work in Japan.</h1>
+      <p class="gx-hero__sub">One group, every step.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===================== GROUP ===================== -->
-<section class="section soft" id="group">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">XY Group</span>
-      <h2>Study, work, and the systems behind them —<br>three pillars, one group.</h2>
-      <p>XY Group is a group of companies and schools that support international students from study to work in Japan. Students study at our schools and go on to work in Japan, and we connect every step in between.</p>
-    </div>
-    <div class="svc-grid reveal">
-      <div class="svc">
-        <div class="svc__icon"><i class="ph ph-graduation-cap"></i></div>
-        <h3>Schools</h3>
-        <p>From Japanese language school to vocational college: SGG Gaigo Gakuin (Tokyo and Osaka), Chinichi (Takadanobaba, Tokyo), Haba Gakuen and Hirai Gakuen.</p>
-        <a class="case__more" href="partners.html" style="margin-top:14px">For study-abroad agents<i class="ph ph-arrow-right"></i></a>
-      </div>
-      <div class="svc">
-        <div class="svc__icon"><i class="ph ph-briefcase"></i></div>
-        <h3>Careers</h3>
-        <p>Support after graduation: CCC Co., Ltd. is licensed in Japan for worker dispatch and job placement, and helps international students find work.</p>
-        <a class="case__more" href="company.html" style="margin-top:14px">See group companies<i class="ph ph-arrow-right"></i></a>
-      </div>
-      <div class="svc">
-        <div class="svc__icon"><i class="ph ph-cpu"></i></div>
-        <h3>Technology</h3>
-        <p>AX and DX for the whole group: XY, K.K. builds and runs the systems for every group business, and Compass, our application system, is live at our schools.</p>
-        <a class="case__more" href="technology.html" style="margin-top:14px">Explore our technology<i class="ph ph-arrow-right"></i></a>
+  <section class="gx-sec" id="about">
+    <div class="wrap gx-split">
+      <picture class="gx-slant"><source type="image/webp" srcset="../assets/photos/city-tokyo-800.webp 800w, ../assets/photos/city-tokyo-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw"><img src="../assets/photos/city-tokyo-800.jpg" srcset="../assets/photos/city-tokyo-800.jpg 800w, ../assets/photos/city-tokyo-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="Tokyo skyline" loading="lazy" decoding="async"></picture>
+      <div>
+        <h2 class="gx-en">Who <em>we</em> are</h2>
+        <p class="gx-jp">Study, work, and the systems behind them: three pillars, one group.</p>
+        <p>XY Group brings together Japanese language schools, vocational colleges, career support and the technology behind them. We support more than 4,000 international students a year, from their first class to their first job in Japan.</p>
+        <a class="gx-arrow" href="about.html"><i class="ph ph-arrow-right"></i>About XY Group</a>
       </div>
     </div>
-    <div class="case-flow reveal">
-      <div class="step"><div class="n">STEP 1</div><div class="t">Student recruitment</div></div>
-      <div class="step"><div class="n">STEP 2</div><div class="t">Applications &amp; enrollment<br>(Compass)</div></div>
-      <div class="step"><div class="n">STEP 3</div><div class="t">School operations</div></div>
-      <div class="step"><div class="n">STEP 4</div><div class="t">Careers &amp; employment<br>(CCC)</div></div>
-    </div>
-    <div class="section-head reveal" style="margin-top:64px">
-      <h2 style="font-size:clamp(21px,2.6vw,27px)">Companies and schools in the group</h2>
-    </div>
-    <div class="case-cards reveal">
-      <div class="case-card tint">
-        <span class="pill">Core company</span>
-        <h3>XY, K.K.</h3>
-        <p>Builds and runs the systems for every group business and leads AX and DX.</p>
-      </div>
-      <div class="case-card">
-        <span class="pill">Japanese language school</span>
-        <h3>SGG Gaigo Gakuin</h3>
-        <p>Japanese language schools in Tokyo and Osaka.</p>
-      </div>
-      <div class="case-card">
-        <span class="pill">Japanese language school</span>
-        <h3>Chinichi Co., Ltd.</h3>
-        <p>Operates a Japanese language school and supports the recruitment and education of international students.</p>
-      </div>
-      <div class="case-card">
-        <span class="pill">Careers</span>
-        <h3>CCC Co., Ltd.</h3>
-        <p>Career support for international students, licensed in Japan for worker dispatch and job placement.</p>
-      </div>
-    </div>
-    <p class="cases__note reveal">XY Group is the name for the companies and schools behind our Japanese language schools, vocational colleges, career support and technology.</p>
-  </div>
-</section>
+    <div class="wrap"><div class="gx-nums">
+      <div><b>2013</b><span>Began as a small school, Chinichi</span></div>
+      <div><b>4,000+</b><span>International students a year</span></div>
+      <div><b>3</b><span>Pillars: schools, careers, technology</span></div>
+    </div></div>
+  </section>
 
-<!-- ===================== STORY ===================== -->
-<section class="section" id="story">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Our Story</span>
-      <h2>It began with one small school.</h2>
-      <p>In 2013, Chinichi opened as a small private school for international students preparing for Japanese universities and graduate schools. That was the beginning of XY Group.</p>
-    </div>
-    <a class="case__more reveal" href="story.html">Read our story<i class="ph ph-arrow-right"></i></a>
-  </div>
-</section>
-
-<!-- ===================== REPRESENTATIVE ===================== -->
-<section class="section soft" id="representative">
-  <div class="wrap">
-    <div class="rep reveal">
-      <div class="rep__card">
-        <div class="rep__avatar"><span aria-hidden="true">薛</span><img src="../assets/daihyou.jpg" alt="Iken Setsu, Representative Director &amp; CEO" onerror="this.remove()"></div>
-        <div class="rep__name">Iken Setsu<span>薛 偉軒</span></div>
-        <div class="rep__role">Representative Director &amp; CEO</div>
-        <div class="rep__tags">
-          <span>Keio University (B.A.)</span>
-          <span>The University of Tokyo (Master's)</span>
-          <span>Leads AI &amp; product development</span>
-          <span>Former Recruit Co., Ltd.</span>
-        </div>
+  <section class="gx-sec gx-sec--soft" id="business">
+    <div class="wrap">
+      <h2 class="gx-en">Our <em>Business</em></h2>
+      <p class="gx-jp">Connecting every step from study to work in Japan.</p>
+      <div class="gx-biz">
+        <a href="business.html#language"><picture class=""><source type="image/webp" srcset="../assets/photos/class-talk-800.webp 800w, ../assets/photos/class-talk-1600.webp 1600w" sizes="(max-width:900px) 100vw, 25vw"><img src="../assets/photos/class-talk-800.jpg" srcset="../assets/photos/class-talk-800.jpg 800w, ../assets/photos/class-talk-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 25vw" alt="Japanese class" loading="lazy" decoding="async"></picture><div><small>Language schools</small><h3>Japanese language schools</h3><p>SGG Gaigo Gakuin (Tokyo and Osaka) and Chinichi (Takadanobaba, Tokyo).</p></div></a>
+        <a href="business.html#vocational"><picture class=""><source type="image/webp" srcset="../assets/photos/sister-kanagawa-800.webp 800w, ../assets/photos/sister-kanagawa-1600.webp 1600w" sizes="(max-width:900px) 100vw, 25vw"><img src="../assets/photos/sister-kanagawa-800.jpg" srcset="../assets/photos/sister-kanagawa-800.jpg 800w, ../assets/photos/sister-kanagawa-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 25vw" alt="Vocational college building" loading="lazy" decoding="async"></picture><div><small>Vocational colleges</small><h3>Vocational colleges</h3><p>Haba Gakuen and Hirai Gakuen.</p></div></a>
+        <a href="business.html#career"><picture class=""><source type="image/webp" srcset="../assets/photos/baba-lounge-800.webp 800w, ../assets/photos/baba-lounge-1600.webp 1600w" sizes="(max-width:900px) 100vw, 25vw"><img src="../assets/photos/baba-lounge-800.jpg" srcset="../assets/photos/baba-lounge-800.jpg 800w, ../assets/photos/baba-lounge-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 25vw" alt="Student lounge" loading="lazy" decoding="async"></picture><div><small>Career support</small><h3>Career support</h3><p>CCC Co., Ltd., licensed for worker dispatch and job placement.</p></div></a>
+        <a href="technology.html"><picture><img src="../assets/compass-screen.jpg" alt="Compass screen" loading="lazy"></picture><div><small>Technology</small><h3>Technology</h3><p>XY, K.K.: systems and AI for every group business.</p></div></a>
       </div>
-      <div class="rep__body">
-        <span class="eyebrow">Message from the CEO</span>
-        <h2>Solving the problems I saw inside schools.</h2>
-        <p>I was born in China, graduated from Keio University and completed a master's program at the University of Tokyo. Since 2012 I have worked in study-in-Japan services, advising students on undergraduate and graduate admissions and launching and running Japanese-language education businesses.</p>
-        <p>At Recruit Co., Ltd. I worked in corporate sales and web marketing before moving into business planning and new business development. I then joined the management of educational institutions and have run several education businesses, including Japanese language schools and vocational colleges.</p>
-        <p>Today I help run an education group that welcomes more than 4,000 international students a year. Years of this work showed me how much schools struggle with complex administration and with operations that depend on a few individuals. I founded XY to solve that.</p>
-        <p>I personally lead our product development, using AI and a modern technology stack. We build our systems in-house with a small team and AI-assisted development, starting with Compass, our student application and management system. Our work spans workflow automation, knowledge retrieval with RAG, LLM tuning and on-premise AI, putting AI agents to work in real operations. We bring education and technology together from both the management and the engineering side.</p>
-        <div class="rep__quote">Our mission is to raise the productivity of educational institutions and support their long-term growth through education and technology.</div>
-      </div>
+      <a class="gx-arrow" href="business.html"><i class="ph ph-arrow-right"></i>Our business</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===================== MISSION ===================== -->
-<section class="section mission">
-  <div class="wrap reveal">
-    <span class="eyebrow">Vision</span>
-    <h2>Advancing humanity,<br><span class="ac">through education.</span></h2>
-    <p>Our mission is to use AI to help learners, teachers and schools grow. We refine our systems every day in the schools of our own group, then bring them from Tokyo to educational institutions around the world.</p>
-    <div class="mission__name">
-      <b>Why “XY”</b>
-      <p>In mathematics, x and y are the unknowns. Human progress has always meant solving for them. And X × Y is the power of multiplication — education times technology, people times AI. Our name stands for a world where learners and teachers keep solving the unknown, together with AI.</p>
-    </div>
-    <span class="tag">Human × AI × Global</span>
-  </div>
-</section>
-
-<!-- ===================== CTA ===================== -->
-<section class="section--tight">
-  <div class="wrap">
-    <div class="cta reveal">
-      <div class="cta__txt">
-        <h2>Let's build the future of<br>international students together.</h2>
-        <p>We'd love to hear from schools, study-abroad agents, investors and partners.</p>
+  <section class="gx-sec" id="tech">
+    <div class="wrap gx-split">
+      <div>
+        <h2 class="gx-en"><em>Tech</em>nology</h2>
+        <p class="gx-jp">Software and AI for schools, built by people who run schools.</p>
+        <p>XY, K.K. builds and runs the systems for every group business. Compass, our application system, is live at our schools, and we bring what we refine there to other educational institutions.</p>
+        <a class="gx-arrow" href="technology.html"><i class="ph ph-arrow-right"></i>Explore our technology</a>
       </div>
-      <div class="cta__actions">
-        <a class="btn btn--onnavy" href="contact.html"><i class="ph ph-paper-plane-tilt"></i>Contact form</a>
-        <div class="cta__phone">Prefer to call?<b><a href="tel:+818048767999">+81-80-4876-7999</a></b></div>
+      <img class="gx-round" src="../assets/compass-screen.jpg" alt="Compass screen" loading="lazy">
+    </div>
+  </section>
+
+  <section class="gx-sec gx-sec--soft" id="message">
+    <div class="wrap gx-msg">
+      <img src="../assets/daihyou.jpg" alt="Iken Setsu, Representative Director & CEO" loading="lazy">
+      <div>
+        <h2 class="gx-en">Message</h2>
+        <p class="gx-jp">Solving the problems I saw inside schools.</p>
+        <p>Our mission is to raise the productivity of educational institutions and support their long-term growth through education and technology.</p>
+        <p class="gx-sign">Iken Setsu, Representative Director & CEO</p>
+        <a class="gx-arrow" href="about.html#message"><i class="ph ph-arrow-right"></i>Read the message</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="gx-careers">
+    <div class="wrap">
+      <h2 class="gx-en"><em>Careers</em></h2>
+      <p>Join us in supporting people who study and work in Japan.</p>
+      <div class="gx-careers__card"><picture class=""><source type="image/webp" srcset="../assets/photos/kiku-hall-800.webp 800w, ../assets/photos/kiku-hall-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1100px"><img src="../assets/photos/kiku-hall-800.jpg" srcset="../assets/photos/kiku-hall-800.jpg 800w, ../assets/photos/kiku-hall-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 1100px" alt="School hall" loading="lazy" decoding="async"></picture><a href="recruit.html">See careers <i class="ph ph-arrow-right"></i></a></div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="contact">
+    <div class="wrap">
+      <h2 class="gx-en">Contact</h2>
+      <p class="gx-jp">Choose the contact that fits your inquiry.</p>
+      <div class="gx-doors">
+        <a href="contact.html"><i class="ph ph-buildings"></i><b>Schools</b><span>Systems and DX</span></a>
+        <a href="partners.html"><i class="ph ph-globe-hemisphere-east"></i><b>Study-abroad agents</b><span>Sending students and partnerships</span></a>
+        <a href="investors.html"><i class="ph ph-handshake"></i><b>Investors & partners</b><span>Partnership inquiries</span></a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer__top">
-      <div class="footer__brand">
-        <img class="logo" src="../assets/logo-white.svg" alt="XY, K.K." width="80" height="32">
-        <div class="brand-jp">XY, K.K.</div>
-        <p>Software and AI for educational institutions,<br>built by people who run schools.</p>
-      </div>
-      <div class="footer__col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="technology.html">Technology</a></li>
-          <li><a href="fde.html">FDE</a></li>
-          <li><a href="technology.html#strengths">Why XY</a></li>
-          <li><a href="cases.html">Case Studies</a></li>
-          <li><a href="index.html#representative">Message from the CEO</a></li>
-          <li><a href="story.html">Our Story</a></li>
-          <li><a href="company.html">Corporate Profile</a></li>
-          <li><a href="partners.html">For Study-Abroad Agents</a></li>
-          <li><a href="investors.html">For Investors</a></li>
-          <li><a href="column.html">Insights</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="recruit.html">Careers</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer__col footer__contact">
-        <h4>Contact</h4>
-        <div><i class="ph-fill ph-map-pin"></i><span>3F Sankei Bldg., 1-28-10 Takadanobaba,<br>Shinjuku-ku, Tokyo 169-0075, Japan</span></div>
-        <div><i class="ph-fill ph-phone-call"></i><span><a href="tel:+818048767999" style="color:inherit">+81-80-4876-7999</a></span></div>
-        <div><i class="ph-fill ph-envelope-simple"></i><span><a href="mailto:setsuiken@xy-cloud.org" style="color:inherit">setsuiken@xy-cloud.org</a></span></div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>© 2024 XY, K.K. (株式会社XY) All rights reserved.</p>
-      <div class="legal">
-        <a href="company.html">Corporate Profile</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="../" hreflang="ja" lang="ja">日本語</a>
-      </div>
+<footer class="site-footer gx-footer">
+  <div class="gx-ft">
+    <div class="gx-ft__links"><div><h4>About</h4><ul><li><a href="about.html#message">Message from the CEO</a></li><li><a href="about.html#vision">Vision & Mission</a></li><li><a href="about.html#group">Group companies & schools</a></li><li><a href="story.html">Our story</a></li><li><a href="company.html">Company</a></li></ul></div><div><h4>Business</h4><ul><li><a href="business.html#language">Japanese language schools</a></li><li><a href="business.html#vocational">Vocational colleges</a></li><li><a href="business.html#career">Career support</a></li><li><a href="technology.html">Technology</a></li></ul></div><div><h4>Technology</h4><ul><li><a href="compass.html">Compass</a></li><li><a href="chinichi.html">chinichi-OS</a></li><li><a href="fde.html">What is FDE</a></li><li><a href="cases.html">Case studies</a></li><li><a href="column.html">Column</a></li></ul></div><div><h4>More</h4><ul><li><a href="recruit.html">Careers</a></li><li><a href="news.html">News</a></li><li><a href="partners.html">For agents</a></li><li><a href="investors.html">Investors & partners</a></li><li><a href="faq.html">FAQ</a></li></ul></div></div>
+    <div class="gx-ft__brand">
+      <img src="../assets/logo.svg" alt="XY Group" width="150" height="60">
+      <a class="gx-pill gx-pill--light" href="contact.html">Contact us <i class="ph ph-arrow-right"></i></a>
+      <p>3F Sankei Bldg., 1-28-10 Takadanobaba, Shinjuku-ku, Tokyo 169-0075<br><a href="tel:08048767999">080-4876-7999</a>　<a href="mailto:setsuiken@xy-cloud.org">setsuiken@xy-cloud.org</a></p>
     </div>
   </div>
+  <div class="gx-ft__legal"><div><a href="company.html">Company</a><a href="privacy.html">Privacy policy</a></div><span>© 2024 XY, K.K. All rights reserved.</span></div>
 </footer>
 
 <a class="float-cta" href="contact.html" aria-label="Contact us"><i class="ph-fill ph-chat-circle-dots"></i>Contact us</a>

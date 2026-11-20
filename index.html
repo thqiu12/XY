@@ -26,10 +26,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-<link rel="stylesheet" href="css/style.css?v=21">
+<link rel="stylesheet" href="css/style.css?v=23">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,25 +81,17 @@
 <body>
 
 <!-- ===================== HEADER ===================== -->
-<header class="site-header">
+<header class="site-header gx-header">
   <div class="wrap">
     <nav class="nav" id="nav">
-      <a class="nav__brand" href="index.html" aria-label="株式会社XY ホーム">
+      <a class="nav__brand" href="index.html" aria-label="XY Group ホーム">
         <img class="logo" src="assets/logo.svg" alt="" width="80" height="32">
-        <span class="brand-jp">株式会社XY</span>
+        <span class="brand-jp">XY GROUP</span>
       </a>
-      <div class="nav__links">
-        <a href="index.html#group">グループ</a>
-        <a href="technology.html">テクノロジー</a>
-        <a href="cases.html">導入事例</a>
-        <a href="story.html">私たちの歩み</a>
-        <a href="recruit.html">採用</a>
-        <a href="company.html">会社概要</a>
-      </div>
+      <div class="nav__links"><a href="index.html" aria-current="page">ホーム</a><a href="about.html">私たちについて</a><a href="business.html">事業分野</a><a href="technology.html">テクノロジー</a><a href="recruit.html">採用情報</a><a href="news.html">お知らせ</a></div>
       <div class="nav__cta">
         <div class="lang-switch" role="group" aria-label="言語"><span aria-current="true">JA</span><a href="en/" hreflang="en" lang="en">EN</a></div>
-        <a class="nav__phone" href="tel:08048767999"><i class="ph-fill ph-phone-call"></i>080-4876-7999</a>
-        <a class="btn btn--primary" href="contact.html">お問い合わせ</a>
+        <a class="gx-pill" href="contact.html">Contact us</a>
         <button class="nav__toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false"><i class="ph ph-list"></i></button>
       </div>
     </nav>
@@ -107,219 +99,117 @@
 </header>
 
 <main>
-<!-- ===================== HERO ===================== -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero__inner hero__inner--shot">
-      <div class="hero__copy">
-        <span class="hero__eyebrow"><i class="ph-fill ph-graduation-cap"></i>XY Group｜東京から世界へ</span>
-        <h1>日本で学び、日本で働く。<br><span class="accent">その道のりを、ひとつに。</span></h1>
-        <p class="hero__lead">XY Groupは、日本語学校・専門学校・就職支援と、それを支えるテクノロジーをひとつにつなぐ教育グループです。年間4,000名を超える留学生の「学ぶ」から「働く」までを支えています。</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#group"><i class="ph ph-buildings"></i>グループを知る</a>
-          <a class="btn btn--ghost" href="partners.html"><i class="ph ph-handshake"></i>海外エージェントの方へ</a>
-        </div>
-        <div class="hero__meta">
-          <div><b>2013年創業</b><span>私塾「知日」から</span></div>
-          <div><b>4,000名+</b><span>年間の留学生</span></div>
-          <div><b>学校・就職・AI</b><span>ひとつのグループで</span></div>
-        </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero-card">
-          <div class="hero-card__tag">XY GROUP</div>
-          <div class="hero-card__big">XY<small>日本で学び、働くまで</small></div>
-          <div class="hero-card__list">
-            <div><i class="ph-fill ph-check-circle"></i>日本語学校｜SGG外語学院・知日</div>
-            <div><i class="ph-fill ph-check-circle"></i>専門学校｜学校法人羽場学園・平井学園</div>
-            <div><i class="ph-fill ph-check-circle"></i>就職支援｜CCC（派遣・職業紹介 許可）</div>
-            <div><i class="ph-fill ph-check-circle"></i>テクノロジー｜株式会社XY</div>
-          </div>
-        </div>
-      </div>
+  <section class="gx-hero">
+    <picture class="gx-hero__img"><source type="image/webp" srcset="assets/photos/activity-shodo-800.webp 800w, assets/photos/activity-shodo-1600.webp 1600w" sizes="100vw"><img src="assets/photos/activity-shodo-800.jpg" srcset="assets/photos/activity-shodo-800.jpg 800w, assets/photos/activity-shodo-1600.jpg 1600w" sizes="100vw" alt="書道の授業に取り組む留学生" fetchpriority="high" decoding="async"></picture>
+    <div class="gx-hero__panel"></div>
+    <div class="gx-hero__copy">
+      <p class="gx-hero__eyebrow">XY Group｜東京から世界へ</p>
+      <h1>日本で学び、<br>日本で働く。</h1>
+      <p class="gx-hero__sub">その道のりを、ひとつのグループで。</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===================== GROUP ===================== -->
-<section class="section soft" id="group">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">XY Group</span>
-      <h2>学ぶ・働く・支える。<br>3つの柱でつながるグループ。</h2>
-      <p>XY Groupは、留学生の「学ぶ」から「働く」までを支える企業と学校の集まりです。学校で学び、卒業後は日本で働く。その一つひとつの段階を、グループの中でつないでいます。</p>
-    </div>
-    <div class="svc-grid reveal">
-      <div class="svc">
-        <div class="svc__icon"><i class="ph ph-graduation-cap"></i></div>
-        <h3>学校</h3>
-        <p>日本語学校から専門学校まで。SGG外語学院（東京・大阪）、知日（東京・高田馬場）、学校法人羽場学園・平井学園が、留学生の学びを支えます。</p>
-        <a class="case__more" href="partners.html" style="margin-top:14px">海外エージェントの方へ<i class="ph ph-arrow-right"></i></a>
-      </div>
-      <div class="svc">
-        <div class="svc__icon"><i class="ph ph-briefcase"></i></div>
-        <h3>就職</h3>
-        <p>卒業後のキャリアまで。CCC株式会社が労働者派遣事業・有料職業紹介事業の許可を取得し、留学生の就職を支援しています。</p>
-        <a class="case__more" href="company.html" style="margin-top:14px">グループ会社を見る<i class="ph ph-arrow-right"></i></a>
-      </div>
-      <div class="svc">
-        <div class="svc__icon"><i class="ph ph-cpu"></i></div>
-        <h3>テクノロジー</h3>
-        <p>グループ全体のDX・AX。株式会社XYがグループ全事業のシステムを開発・運用し、学生出願・管理システム「Compass」はグループ校で稼働中です。</p>
-        <a class="case__more" href="technology.html" style="margin-top:14px">テクノロジーを見る<i class="ph ph-arrow-right"></i></a>
+  <section class="gx-sec" id="about">
+    <div class="wrap gx-split">
+      <picture class="gx-slant"><source type="image/webp" srcset="assets/photos/city-tokyo-800.webp 800w, assets/photos/city-tokyo-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw"><img src="assets/photos/city-tokyo-800.jpg" srcset="assets/photos/city-tokyo-800.jpg 800w, assets/photos/city-tokyo-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="東京の街並み" loading="lazy" decoding="async"></picture>
+      <div>
+        <h2 class="gx-en">Who <em>we</em> are</h2>
+        <p class="gx-jp">学ぶ・働く・支える。3つの柱でつながるグループ。</p>
+        <p>XY Groupは、日本語学校・専門学校・就職支援と、それを支えるテクノロジーをひとつにつなぐ教育グループです。年間4,000名を超える留学生の「学ぶ」から「働く」までを支えています。</p>
+        <a class="gx-arrow" href="about.html"><i class="ph ph-arrow-right"></i>XY Groupについて</a>
       </div>
     </div>
-    <div class="case-flow reveal">
-      <div class="step"><div class="n">STEP 1</div><div class="t">学生募集</div></div>
-      <div class="step"><div class="n">STEP 2</div><div class="t">出願・入学手続き<br>（Compass）</div></div>
-      <div class="step"><div class="n">STEP 3</div><div class="t">在籍・学校運営</div></div>
-      <div class="step"><div class="n">STEP 4</div><div class="t">就職・キャリア<br>（CCC）</div></div>
-    </div>
-    <div class="section-head reveal" style="margin-top:64px">
-      <h2 style="font-size:clamp(21px,2.6vw,27px)">グループの会社と学校</h2>
-    </div>
-    <div class="case-cards reveal">
-      <div class="case-card tint">
-        <span class="pill">グループの中核</span>
-        <h3>株式会社XY</h3>
-        <p>グループ全事業のシステム開発・運用と、AX・DXの推進を担当。</p>
-      </div>
-      <div class="case-card">
-        <span class="pill">日本語学校</span>
-        <h3>株式会社SGG外語学院</h3>
-        <p>日本語学校の運営（東京・大阪）。</p>
-      </div>
-      <div class="case-card">
-        <span class="pill">日本語学校</span>
-        <h3>知日株式会社</h3>
-        <p>日本語学校の運営と、留学生の募集・教育支援。</p>
-      </div>
-      <div class="case-card">
-        <span class="pill">就職支援</span>
-        <h3>CCC株式会社</h3>
-        <p>留学生の就職支援。労働者派遣事業・有料職業紹介事業の許可を取得しています。</p>
-      </div>
-    </div>
-    <p class="cases__note reveal">XY Groupは、日本語学校・専門学校・就職支援・テクノロジーを担う企業と学校の総称です。</p>
-  </div>
-</section>
+    <div class="wrap"><div class="gx-nums">
+      <div><b>2013</b><span>年創業（私塾「知日」から）</span></div>
+      <div><b>4,000+</b><span>年間の留学生</span></div>
+      <div><b>3</b><span>つの柱：学校・就職・テクノロジー</span></div>
+    </div></div>
+  </section>
 
-<!-- ===================== STORY ===================== -->
-<section class="section" id="story">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Our Story</span>
-      <h2>一つの私塾から、始まった。</h2>
-      <p>2013年、日本の大学・大学院を目指す留学生のために開かれた小さな私塾「知日」。それが、XY Groupの始まりです。</p>
-    </div>
-    <a class="case__more reveal" href="story.html">私たちの歩みを読む<i class="ph ph-arrow-right"></i></a>
-  </div>
-</section>
-
-<!-- ===================== REPRESENTATIVE ===================== -->
-<section class="section soft" id="representative">
-  <div class="wrap">
-    <div class="rep reveal">
-      <div class="rep__card">
-        <div class="rep__avatar"><span aria-hidden="true">薛</span><img src="assets/daihyou.jpg" alt="代表取締役 薛 偉軒" onerror="this.remove()"></div>
-        <div class="rep__name">薛 偉軒<span>SETSU IKEN</span></div>
-        <div class="rep__role">代表取締役</div>
-        <div class="rep__tags">
-          <span>慶應義塾大学 卒業</span>
-          <span>東京大学大学院 修士課程 修了</span>
-          <span>AI・プロダクト開発を主導</span>
-          <span>元・株式会社リクルート</span>
-        </div>
+  <section class="gx-sec gx-sec--soft" id="business">
+    <div class="wrap">
+      <h2 class="gx-en">Our <em>Business</em></h2>
+      <p class="gx-jp">日本で学び、働くまでを、グループでつなぐ。</p>
+      <div class="gx-biz">
+        <a href="business.html#language"><picture class=""><source type="image/webp" srcset="assets/photos/class-talk-800.webp 800w, assets/photos/class-talk-1600.webp 1600w" sizes="(max-width:900px) 100vw, 25vw"><img src="assets/photos/class-talk-800.jpg" srcset="assets/photos/class-talk-800.jpg 800w, assets/photos/class-talk-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 25vw" alt="日本語の授業" loading="lazy" decoding="async"></picture><div><small>Japanese language school</small><h3>日本語学校</h3><p>SGG外語学院（東京・大阪）、知日（東京・高田馬場）。</p></div></a>
+        <a href="business.html#vocational"><picture class=""><source type="image/webp" srcset="assets/photos/sister-kanagawa-800.webp 800w, assets/photos/sister-kanagawa-1600.webp 1600w" sizes="(max-width:900px) 100vw, 25vw"><img src="assets/photos/sister-kanagawa-800.jpg" srcset="assets/photos/sister-kanagawa-800.jpg 800w, assets/photos/sister-kanagawa-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 25vw" alt="専門学校の校舎" loading="lazy" decoding="async"></picture><div><small>Vocational college</small><h3>専門学校</h3><p>学校法人羽場学園・平井学園。</p></div></a>
+        <a href="business.html#career"><picture class=""><source type="image/webp" srcset="assets/photos/baba-lounge-800.webp 800w, assets/photos/baba-lounge-1600.webp 1600w" sizes="(max-width:900px) 100vw, 25vw"><img src="assets/photos/baba-lounge-800.jpg" srcset="assets/photos/baba-lounge-800.jpg 800w, assets/photos/baba-lounge-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 25vw" alt="学生ラウンジ" loading="lazy" decoding="async"></picture><div><small>Career support</small><h3>就職支援</h3><p>CCC株式会社。労働者派遣事業・有料職業紹介事業の許可を取得。</p></div></a>
+        <a href="technology.html"><picture><img src="assets/compass-screen.jpg" alt="学生出願・管理システム Compass の画面" loading="lazy"></picture><div><small>Technology</small><h3>テクノロジー</h3><p>株式会社XY。グループ全事業のシステムと AI。</p></div></a>
       </div>
-      <div class="rep__body">
-        <span class="eyebrow">代表メッセージ</span>
-        <h2>教育の現場で感じた課題を、解決するために。</h2>
-        <p>中国出身。慶應義塾大学を卒業後、東京大学大学院修士課程を修了。2012年より日本留学支援事業に従事し、学部・大学院進学指導や日本語教育事業の立ち上げ・運営に携わってきました。</p>
-        <p>株式会社リクルートにて法人営業およびWebマーケティングを経験した後、事業企画・新規事業開発の領域へ。その後、教育機関の経営に参画し、日本語学校・専門学校など複数の教育事業の運営を担当してきました。</p>
-        <p>現在は、年間4,000名を超える留学生を受け入れる教育グループの経営に携わっています。長年の経験のなかで、教育機関が抱える煩雑な業務や属人的な運営の課題を肌で感じ、その解決を目的として株式会社XYを設立しました。</p>
-        <p>近年は、AIとモダンな技術スタックを活用したプロダクト開発を自ら主導しています。学生出願・管理システム「Compass」をはじめとする教育機関向けシステムを「少人数 × AI支援開発」で内製。業務の自動化、RAG（検索拡張生成）による社内ナレッジ活用、LLMのチューニング、ローカルAI（オンプレミス環境）の構築・導入まで手がけ、AIエージェントの実装と現場での活用を推進しています。技術と経営の両面から、「教育 × テクノロジー」を形にしています。</p>
-        <div class="rep__quote">「教育 × テクノロジー」を通じて、教育機関の生産性向上と持続的な成長に貢献することを使命としています。</div>
-      </div>
+      <a class="gx-arrow" href="business.html"><i class="ph ph-arrow-right"></i>事業分野</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===================== MISSION ===================== -->
-<section class="section mission">
-  <div class="wrap reveal">
-    <span class="eyebrow">Vision</span>
-    <h2>人類の進歩を、<br><span class="ac">教育から。</span></h2>
-    <p>Mission｜AIで、学ぶ人・教える人・学校を進化させる。グループの学校で毎日使いながら磨き上げたシステムを、東京から世界の教育機関へ届けます。</p>
-    <div class="mission__name">
-      <b>社名「XY」の由来</b>
-      <p>数学で x と y は「未知数」を表します。人類の進歩とは、未知を解き続けることでした。そして X × Y は、掛け合わせる力。教育とテクノロジー、人とAIを掛け合わせ、学ぶ人と教える人がAIとともに未知を解き続けられる世界をつくる。それが XY という名前に込めた想いです。</p>
-    </div>
-    <span class="tag">Human × AI × Global</span>
-  </div>
-</section>
-
-<!-- ===================== CTA ===================== -->
-<section class="section--tight">
-  <div class="wrap">
-    <div class="cta reveal">
-      <div class="cta__txt">
-        <h2>留学生の未来を、<br>一緒につくりませんか。</h2>
-        <p>教育機関、海外エージェント、投資家・パートナーの方からのご相談をお待ちしています。</p>
+  <section class="gx-sec" id="tech">
+    <div class="wrap gx-split">
+      <div>
+        <h2 class="gx-en"><em>Tech</em>nology</h2>
+        <p class="gx-jp">学校を運営する私たちがつくる、教育機関のためのソフトウェアとAI。</p>
+        <p>株式会社XYがグループ全事業のシステムを開発・運用しています。学生出願・管理システム「Compass」はグループ校で稼働中。グループの学校で毎日使いながら磨き上げたシステムを、ほかの教育機関にも届けています。</p>
+        <a class="gx-arrow" href="technology.html"><i class="ph ph-arrow-right"></i>テクノロジーを見る</a>
       </div>
-      <div class="cta__actions">
-        <a class="btn btn--onnavy" href="contact.html"><i class="ph ph-paper-plane-tilt"></i>お問い合わせフォーム</a>
-        <div class="cta__phone">お電話でのご相談<b><a href="tel:08048767999">080-4876-7999</a></b></div>
+      <img class="gx-round" src="assets/compass-screen.jpg" alt="Compass の画面" loading="lazy">
+    </div>
+  </section>
+
+  <section class="gx-sec gx-sec--soft" id="message">
+    <div class="wrap gx-msg">
+      <img src="assets/daihyou.jpg" alt="代表取締役 薛 偉軒" loading="lazy">
+      <div>
+        <h2 class="gx-en">Message</h2>
+        <p class="gx-jp">教育の現場で感じた課題を、解決するために。</p>
+        <p>「教育 × テクノロジー」を通じて、教育機関の生産性向上と持続的な成長に貢献することを使命としています。</p>
+        <p class="gx-sign">代表取締役 薛 偉軒</p>
+        <a class="gx-arrow" href="about.html#message"><i class="ph ph-arrow-right"></i>代表メッセージを読む</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="gx-sec" id="news">
+    <div class="wrap">
+      <h2 class="gx-en">News</h2>
+      <div class="gx-news">
+        <a href="news.html"><time>2026.06</time><span class="gx-tag">取り組み</span><span>補助金を活用した導入支援に向け、申請手続きを開始しました</span></a>
+        <a href="news.html"><time>2026.06</time><span class="gx-tag">お知らせ</span><span>コーポレートサイトを公開・リニューアルしました</span></a>
+        <a href="news.html"><time>2026</time><span class="gx-tag">プロダクト</span><span>学生出願・管理システム「Compass」の提供を開始しました</span></a>
+        <a href="news.html"><time>2024.02</time><span class="gx-tag">会社</span><span>株式会社XYを設立しました</span></a>
+      </div>
+      <a class="gx-arrow" href="news.html"><i class="ph ph-arrow-right"></i>VIEW all</a>
+    </div>
+  </section>
+
+  <section class="gx-careers">
+    <div class="wrap">
+      <h2 class="gx-en"><em>Careers</em></h2>
+      <p>日本で学び、働く人を、ともに支える仲間を探しています。</p>
+      <div class="gx-careers__card"><picture class=""><source type="image/webp" srcset="assets/photos/kiku-hall-800.webp 800w, assets/photos/kiku-hall-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1100px"><img src="assets/photos/kiku-hall-800.jpg" srcset="assets/photos/kiku-hall-800.jpg 800w, assets/photos/kiku-hall-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 1100px" alt="学校のホール" loading="lazy" decoding="async"></picture><a href="recruit.html">採用情報を見る <i class="ph ph-arrow-right"></i></a></div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="contact">
+    <div class="wrap">
+      <h2 class="gx-en">Contact</h2>
+      <p class="gx-jp">ご相談の内容に合わせて、窓口をお選びください。</p>
+      <div class="gx-doors">
+        <a href="contact.html"><i class="ph ph-buildings"></i><b>教育機関の方</b><span>システム導入・DX のご相談</span></a>
+        <a href="partners.html"><i class="ph ph-globe-hemisphere-east"></i><b>海外エージェントの方</b><span>留学生の送り出し・提携</span></a>
+        <a href="investors.html"><i class="ph ph-handshake"></i><b>投資家・パートナーの方</b><span>協業のご相談</span></a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer__top">
-      <div class="footer__brand">
-        <img class="logo" src="assets/logo-white.svg" alt="株式会社XY" width="80" height="32">
-        <div class="brand-jp">株式会社XY</div>
-        <p>学校を運営する私たちがつくる、<br>教育機関のためのソフトウェアとAI。</p>
-      </div>
-      <div class="footer__col">
-        <h4>サービス・会社</h4>
-        <ul>
-          <li><a href="technology.html">テクノロジー</a></li>
-          <li><a href="fde.html">FDEとは</a></li>
-          <li><a href="technology.html#strengths">XYの強み</a></li>
-          <li><a href="cases.html">導入事例</a></li>
-          <li><a href="index.html#representative">代表メッセージ</a></li>
-          <li><a href="story.html">私たちの歩み</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="partners.html">海外エージェントの方へ</a></li>
-          <li><a href="investors.html">投資家・パートナーの方へ</a></li>
-          <li><a href="column.html">コラム</a></li>
-          <li><a href="news.html">お知らせ</a></li>
-          <li><a href="recruit.html">採用</a></li>
-          <li><a href="faq.html">よくある質問</a></li>
-          <li><a href="privacy.html">プライバシーポリシー</a></li>
-        </ul>
-      </div>
-      <div class="footer__col footer__contact">
-        <h4>お問い合わせ</h4>
-        <div><i class="ph-fill ph-map-pin"></i><span>〒169-0075<br>東京都新宿区高田馬場一丁目28番10号 三慶ビル3階</span></div>
-        <div><i class="ph-fill ph-phone-call"></i><span><a href="tel:08048767999" style="color:inherit">080-4876-7999</a></span></div>
-        <div><i class="ph-fill ph-envelope-simple"></i><span><a href="mailto:setsuiken@xy-cloud.org" style="color:inherit">setsuiken@xy-cloud.org</a></span></div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>© 2024 株式会社XY (XY, K.K.) All rights reserved.</p>
-      <div class="legal">
-        <a href="company.html">会社概要</a>
-        <a href="privacy.html">プライバシーポリシー</a>
-        <a href="en/" hreflang="en" lang="en">English</a>
-      </div>
+<footer class="site-footer gx-footer">
+  <div class="gx-ft">
+    <div class="gx-ft__links"><div><h4>私たちについて</h4><ul><li><a href="about.html#message">代表メッセージ</a></li><li><a href="about.html#vision">Vision・Mission</a></li><li><a href="about.html#group">グループの会社と学校</a></li><li><a href="story.html">私たちの歩み</a></li><li><a href="company.html">会社概要</a></li></ul></div><div><h4>事業分野</h4><ul><li><a href="business.html#language">日本語学校</a></li><li><a href="business.html#vocational">専門学校</a></li><li><a href="business.html#career">就職支援</a></li><li><a href="technology.html">テクノロジー</a></li></ul></div><div><h4>テクノロジー</h4><ul><li><a href="compass.html">Compass</a></li><li><a href="chinichi.html">chinichi-OS</a></li><li><a href="fde.html">FDEとは</a></li><li><a href="cases.html">導入事例</a></li><li><a href="column.html">コラム</a></li></ul></div><div><h4>ご案内</h4><ul><li><a href="recruit.html">採用情報</a></li><li><a href="news.html">お知らせ</a></li><li><a href="partners.html">海外エージェントの方へ</a></li><li><a href="investors.html">投資家・パートナーの方へ</a></li><li><a href="faq.html">よくある質問</a></li></ul></div></div>
+    <div class="gx-ft__brand">
+      <img src="assets/logo.svg" alt="XY Group" width="150" height="60">
+      <a class="gx-pill gx-pill--light" href="contact.html">お問い合わせはこちら <i class="ph ph-arrow-right"></i></a>
+      <p>〒169-0075 東京都新宿区高田馬場一丁目28番10号 三慶ビル3階<br><a href="tel:08048767999">080-4876-7999</a>　<a href="mailto:setsuiken@xy-cloud.org">setsuiken@xy-cloud.org</a></p>
     </div>
   </div>
+  <div class="gx-ft__legal"><div><a href="company.html">会社概要</a><a href="privacy.html">プライバシーポリシー</a></div><span>© 2024 株式会社XY (XY, K.K.) All rights reserved.</span></div>
 </footer>
 
 <a class="float-cta" href="contact.html" aria-label="お問い合わせ"><i class="ph-fill ph-chat-circle-dots"></i>お問い合わせ</a>
