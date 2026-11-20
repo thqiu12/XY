@@ -873,3 +873,10 @@ h1, h2, h3, h4 { line-height: 1.35; font-weight: 700; letter-spacing: .01em; col
 /* ===== 改善 r8（2026-11-20）：FAQ の見出し ===== */
 .faq-h{font-size:clamp(20px,2.4vw,26px);font-weight:800;color:var(--navy);margin:0 0 20px;letter-spacing:.02em}
 #faq-group + .section{padding-top:0}
+
+/* ===== 改善 r10（2026-11-20）：お問い合わせ先のご案内 ===== */
+.contact-guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0 0 32px}
+.contact-guide a{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.contact-guide a:hover{border-color:var(--accent);box-shadow:0 8px 20px rgba(15,39,71,.08)}
+.contact-guide b{display:block;font-size:15px;margin-bottom:4px}
+.contact-guide span{font-size:13px;color:var(--ink-2)}
